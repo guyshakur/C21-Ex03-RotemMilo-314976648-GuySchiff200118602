@@ -11,11 +11,11 @@ namespace FacebookWinFormsApp
         {
             StartBasicFeatureFacebookApp();
         }
-        //fgdf
+
         private static void StartBasicFeatureFacebookApp()
         {
-            Clipboard.SetText("design.patterns.c21");
             FacebookService.s_UseForamttedToStrings = true;
+            Clipboard.SetText("design.patterns.c21");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //bb
