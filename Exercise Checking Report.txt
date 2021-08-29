@@ -1,0 +1,10 @@
+==========================Exercise Checking Report==========================
+Exercise No...........: 2
+First Student Details.: 200118602 - Guy Schiff
+Second Student Details: 314976648 - Rotem Milo
+Delivery Date.........: 21 - July- 2021
+Delivered In Delay....: No
+Delay Reason..........: 
+Visual Studio Version.: 2019
+Comments..............: 
+=======================End Exercise Checking Report=========================
