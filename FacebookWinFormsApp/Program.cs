@@ -14,6 +14,7 @@ namespace FacebookWinFormsApp
 
         private static void StartBasicFeatureFacebookApp()
         {
+
             FacebookService.s_UseForamttedToStrings = true;
             Clipboard.SetText("design.patterns.c21");
             Application.EnableVisualStyles();
