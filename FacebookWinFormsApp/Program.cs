@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using FacebookWinFormsApp.Stradegy;
 using FacebookWrapper;
 
 namespace FacebookWinFormsApp
@@ -24,12 +25,15 @@ namespace FacebookWinFormsApp
             LoginFacade loginFacade = new LoginFacade();
             try
             {
-                loginFacade.AppSettings = AppSettings.LoadFile();
-                if (!string.IsNullOrEmpty(loginFacade.AppSettings.LastAcsessToken) && loginFacade.AppSettings.RememberUser)
+                //loginFacade.AppSettings = AppSettings.LoadFile();
+                loginFacade.Settings = Settings.LoadFile();
+                //if (!string.IsNullOrEmpty(loginFacade.AppSettings.LastAcsessToken) && loginFacade.AppSettings.RememberUser)
+                if (!string.IsNullOrEmpty(loginFacade.Settings.LastAcsessToken) && loginFacade.Settings.RemeberUser)
                 {
                     try
                     {
-                        loginFacade.LoginResult = FacebookService.Connect(loginFacade.AppSettings.LastAcsessToken);
+                        //loginFacade.LoginResult = FacebookService.Connect(loginFacade.AppSettings.LastAcsessToken);
+                        loginFacade.LoginResult = FacebookService.Connect(loginFacade.Settings.LastAcsessToken);
                         MainForm mainForm = new MainForm(loginFacade.LoginResult.LoggedInUser);
                         mainForm.ShowDialog();
                     }

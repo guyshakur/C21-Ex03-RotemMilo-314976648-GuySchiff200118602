@@ -114,6 +114,8 @@
     <Compile Include="Proxy\MonthCalendarProxy.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Stradegy\IFileUtilsStradegy.cs" />
+    <Compile Include="Stradegy\Settings.cs" />
     <Compile Include="Utils\AppSettings.cs" />
     <Compile Include="CustomTextFeature\CustomText.cs" />
     <Compile Include="Utils\XmlFileUtils.cs" />
@@ -133,6 +135,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stradegy\XmlFileUtilsStradegy.cs" />
     <Compile Include="WeatherFeature\Condition.cs" />
     <Compile Include="WeatherFeature\Current.cs" />
     <Compile Include="WeatherFeature\Location.cs" />

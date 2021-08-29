@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using FacebookWinFormsApp.Stradegy;
+using FacebookWinFormsApp.Utils;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 
@@ -9,6 +10,7 @@ namespace FacebookWinFormsApp
     public class LoginFacade
     {
         public AppSettings AppSettings { get; set; }
+        public Settings Settings { get; set; }
 
         public User LoginUser { get; set; }
 
@@ -16,7 +18,8 @@ namespace FacebookWinFormsApp
 
         public LoginFacade()
         {
-            AppSettings = AppSettings.AppSettingsInstance;
+            //AppSettings = AppSettings.AppSettingsInstance;
+            Settings = Settings.SettingsInstance(new XmlFileUtilsStradegy());
             FacebookService.s_CollectionLimit = 100;
         }
 
@@ -36,26 +39,32 @@ namespace FacebookWinFormsApp
                     "groups_access_member_info");
             if (i_RememberedUser)
             {
-                AppSettings.RememberUser = true;
+                //AppSettings.RememberUser = true;
+                Settings.RemeberUser = true;
                 setLastAccessToken();
             }
 
-            AppSettings.SaveToFile();
+            //AppSettings.SaveToFile();
+            Settings.SaveToFile();
             LoginUser = LoginResult.LoggedInUser;
             return LoginResult.AccessToken != null;
         }
 
         private void setLastAccessToken()
         {
-            AppSettings.LastAcsessToken = LoginResult.AccessToken;
+            //AppSettings.LastAcsessToken = LoginResult.AccessToken;
+            Settings.LastAcsessToken = LoginResult.AccessToken;
         }
 
         public void LogOut()
         {
             FacebookService.Logout();
-            AppSettings.LastAcsessToken = string.Empty;
-            AppSettings.RememberUser = false;
-            AppSettings.SaveToFile();
+            //AppSettings.LastAcsessToken = string.Empty;
+            //AppSettings.RememberUser = false;
+            // AppSettings.SaveToFile();
+            Settings.LastAcsessToken = string.Empty;
+            Settings.RemeberUser = false;
+            Settings.SaveToFile();
             LoginResult = null;
         }
     }
