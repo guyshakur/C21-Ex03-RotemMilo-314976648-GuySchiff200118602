@@ -114,7 +114,7 @@
     <Compile Include="Proxy\MonthCalendarProxy.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Stradegy\IFileUtilsStradegy.cs" />
+    <Compile Include="Stradegy\IFileStradegy.cs" />
     <Compile Include="Stradegy\Settings.cs" />
     <Compile Include="Utils\AppSettings.cs" />
     <Compile Include="CustomTextFeature\CustomText.cs" />

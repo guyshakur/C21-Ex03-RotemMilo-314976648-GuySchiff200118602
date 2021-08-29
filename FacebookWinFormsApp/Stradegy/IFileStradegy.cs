@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FacebookWinFormsApp.Stradegy
 {
-    public interface IFileUtilsStradegy
+    public interface IFileStradegy
     {
         void SaveToFile(string i_FileName, object i_SerializeInstance);
         object LoadFile(string i_FileName, object i_SerializeInstance);

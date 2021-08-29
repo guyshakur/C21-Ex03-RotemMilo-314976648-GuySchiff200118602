@@ -10,7 +10,7 @@ namespace FacebookWinFormsApp.Stradegy
     {
         private static readonly Settings sr_Settings = new Settings();
         private static readonly string sr_fileName = "Settings.txt";
-        private static IFileUtilsStradegy sr_FileUtilsStradegy;
+        private static IFileStradegy sr_IFileStradegy;
         public bool RemeberUser { get; set; }
         public string LastAcsessToken { get; set; }
         private Settings()
@@ -18,20 +18,20 @@ namespace FacebookWinFormsApp.Stradegy
 
         }
 
-        public static Settings SettingsInstance(IFileUtilsStradegy i_FileUtils)
+        public static Settings SettingsInstance(IFileStradegy i_FileStradegy)
         {
-            sr_FileUtilsStradegy = i_FileUtils;
+            sr_IFileStradegy = i_FileStradegy;
             return sr_Settings;
         }
 
         public void SaveToFile()
         {
-            sr_FileUtilsStradegy.SaveToFile(sr_fileName, this);
+            sr_IFileStradegy.SaveToFile(sr_fileName, this);
         }
 
         public static Settings LoadFile()
         {
-            return sr_FileUtilsStradegy.LoadFile(sr_fileName, sr_Settings) as Settings;
+            return sr_IFileStradegy.LoadFile(sr_fileName, sr_Settings) as Settings;
         }
 
     }

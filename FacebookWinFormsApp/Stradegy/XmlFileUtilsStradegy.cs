@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace FacebookWinFormsApp.Utils
 {
-    public class XmlFileUtilsStradegy : IFileUtilsStradegy
+    public class XmlFileUtilsStradegy : IFileStradegy
     {
         public object LoadFile(string i_FileName, object i_SerializeInstance)
         {
