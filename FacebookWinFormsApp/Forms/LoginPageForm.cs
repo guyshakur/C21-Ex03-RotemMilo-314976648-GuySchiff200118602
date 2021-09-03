@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using FacebookWinFormsApp.Forms;
 using FacebookWrapper.ObjectModel;
 
 namespace FacebookWinFormsApp
 {
     public partial class LoginPageForm : Form
     {
+        private readonly Theme r_OriginalTheme = new Theme(Color.LightCyan, Color.Black, Color.DodgerBlue, Color.White);
+        private readonly Theme r_DarkModeTheme = new Theme(Color.Black, Color.Aqua, Color.Pink, Color.White);
         public LoginFacade LoginFacade { get; set; }
 
         public LoginPageForm()
@@ -20,8 +24,9 @@ namespace FacebookWinFormsApp
             if(LoginFacade.Login(rememberMeChecked.Checked))
             {
                 MainForm mainForm = new MainForm(LoginFacade.LoginUser);
+                mainForm.DarkAction+= makeDarkLogin;
                 Hide();
-                Close();
+                //Close();
                 mainForm.ShowDialog();
                 Show();
             }
@@ -29,6 +34,20 @@ namespace FacebookWinFormsApp
             {
                 MessageBox.Show(LoginFacade.LoginResult.ErrorMessage, "Login Failed");
             }      
-        }    
+        }
+
+        public void makeDarkLogin(bool i_Dark)
+        {
+            if (i_Dark)
+            {
+                r_DarkModeTheme.MakeOnlyFormTheme(this);
+                r_DarkModeTheme.MakeThemeOnControls(Controls);
+            }
+            else
+            {
+                r_OriginalTheme.MakeOnlyFormTheme(this);
+                r_OriginalTheme.MakeThemeOnControls(Controls);
+            }
+        }
     }
 }

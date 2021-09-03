@@ -17,7 +17,7 @@ namespace FacebookWinFormsApp
         {
 
             FacebookService.s_UseForamttedToStrings = true;
-            Clipboard.SetText("design.patterns.c21");
+            Clipboard.SetText("design.patterns.c21ב");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //bb

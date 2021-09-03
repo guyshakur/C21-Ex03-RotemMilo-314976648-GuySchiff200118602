@@ -1,4 +1,5 @@
-﻿namespace FacebookWinFormsApp
+﻿
+namespace FacebookWinFormsApp
 {
     public partial class MainForm
     {
@@ -99,6 +100,7 @@
             this.buttonLikedPages = new System.Windows.Forms.Button();
             this.webBrowserPages = new System.Windows.Forms.WebBrowser();
             this.tabProfile = new System.Windows.Forms.TabPage();
+            this.checkBoxDarkMode = new System.Windows.Forms.CheckBox();
             this.buttonChooseCustomedPost = new System.Windows.Forms.Button();
             this.pictureBoxWeatherPredict = new System.Windows.Forms.PictureBox();
             this.labelWeatherDetails = new System.Windows.Forms.Label();
@@ -198,6 +200,7 @@
             // listBoxGroups
             // 
             this.listBoxGroups.AllowDrop = true;
+            this.listBoxGroups.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxGroups.DataSource = this.groupBindingSource;
             this.listBoxGroups.FormattingEnabled = true;
             this.listBoxGroups.HorizontalScrollbar = true;
@@ -271,6 +274,7 @@
             // 
             // listBoxFriends
             // 
+            this.listBoxFriends.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxFriends.DataSource = this.friendListBindingSource;
             this.listBoxFriends.DisplayMember = "Name";
             this.listBoxFriends.FormattingEnabled = true;
@@ -449,6 +453,7 @@
             // 
             // listBoxCustomPosts
             // 
+            this.listBoxCustomPosts.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxCustomPosts.FormattingEnabled = true;
             this.listBoxCustomPosts.ItemHeight = 16;
             this.listBoxCustomPosts.Location = new System.Drawing.Point(19, 27);
@@ -525,6 +530,7 @@
             // 
             // textBoxCustomPost
             // 
+            this.textBoxCustomPost.BackColor = System.Drawing.Color.LightCyan;
             this.textBoxCustomPost.Location = new System.Drawing.Point(5, 32);
             this.textBoxCustomPost.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCustomPost.Multiline = true;
@@ -590,6 +596,7 @@
             // 
             // textBoxSearchStock
             // 
+            this.textBoxSearchStock.BackColor = System.Drawing.Color.LightCyan;
             this.textBoxSearchStock.Location = new System.Drawing.Point(331, 43);
             this.textBoxSearchStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSearchStock.Multiline = true;
@@ -693,6 +700,7 @@
             // 
             // listBoxAlbums
             // 
+            this.listBoxAlbums.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxAlbums.FormattingEnabled = true;
             this.listBoxAlbums.ItemHeight = 16;
             this.listBoxAlbums.Location = new System.Drawing.Point(5, 34);
@@ -719,6 +727,7 @@
             // 
             // listBoxPhotos
             // 
+            this.listBoxPhotos.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxPhotos.FormattingEnabled = true;
             this.listBoxPhotos.ItemHeight = 16;
             this.listBoxPhotos.Location = new System.Drawing.Point(5, 247);
@@ -795,6 +804,7 @@
             // 
             // listBoxPhotosComments
             // 
+            this.listBoxPhotosComments.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxPhotosComments.FormattingEnabled = true;
             this.listBoxPhotosComments.ItemHeight = 16;
             this.listBoxPhotosComments.Location = new System.Drawing.Point(16, 245);
@@ -896,6 +906,7 @@
             // 
             // listBoxPosts
             // 
+            this.listBoxPosts.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxPosts.FormattingEnabled = true;
             this.listBoxPosts.ItemHeight = 16;
             this.listBoxPosts.Location = new System.Drawing.Point(4, 103);
@@ -907,6 +918,7 @@
             // 
             // listBoxComments
             // 
+            this.listBoxComments.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxComments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxComments.FormattingEnabled = true;
             this.listBoxComments.ItemHeight = 16;
@@ -918,6 +930,7 @@
             // 
             // tabPages
             // 
+            this.tabPages.BackColor = System.Drawing.Color.LightCyan;
             this.tabPages.Controls.Add(this.splitContainer1);
             this.tabPages.Location = new System.Drawing.Point(4, 25);
             this.tabPages.Margin = new System.Windows.Forms.Padding(4);
@@ -926,7 +939,6 @@
             this.tabPages.Size = new System.Drawing.Size(1130, 595);
             this.tabPages.TabIndex = 1;
             this.tabPages.Text = "Pages";
-            this.tabPages.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
@@ -948,6 +960,7 @@
             // 
             // listBoxLikedPages
             // 
+            this.listBoxLikedPages.BackColor = System.Drawing.Color.LightCyan;
             this.listBoxLikedPages.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxLikedPages.FormattingEnabled = true;
             this.listBoxLikedPages.ItemHeight = 16;
@@ -987,6 +1000,7 @@
             // 
             this.tabProfile.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.tabProfile.BackColor = System.Drawing.Color.LightCyan;
+            this.tabProfile.Controls.Add(this.checkBoxDarkMode);
             this.tabProfile.Controls.Add(this.buttonChooseCustomedPost);
             this.tabProfile.Controls.Add(this.pictureBoxWeatherPredict);
             this.tabProfile.Controls.Add(this.labelWeatherDetails);
@@ -1013,6 +1027,17 @@
             this.tabProfile.Size = new System.Drawing.Size(1130, 595);
             this.tabProfile.TabIndex = 0;
             this.tabProfile.Text = "Profile";
+            // 
+            // checkBoxDarkMode
+            // 
+            this.checkBoxDarkMode.AutoSize = true;
+            this.checkBoxDarkMode.Location = new System.Drawing.Point(162, 441);
+            this.checkBoxDarkMode.Name = "checkBoxDarkMode";
+            this.checkBoxDarkMode.Size = new System.Drawing.Size(99, 21);
+            this.checkBoxDarkMode.TabIndex = 22;
+            this.checkBoxDarkMode.Text = "Dark Mode";
+            this.checkBoxDarkMode.UseVisualStyleBackColor = true;
+            this.checkBoxDarkMode.CheckedChanged += new System.EventHandler(this.checkBoxDarkMode_CheckedChanged);
             // 
             // buttonChooseCustomedPost
             // 
@@ -1151,6 +1176,7 @@
             // 
             // textBoxPost
             // 
+            this.textBoxPost.BackColor = System.Drawing.Color.LightCyan;
             this.textBoxPost.Location = new System.Drawing.Point(264, 32);
             this.textBoxPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPost.Multiline = true;
@@ -1210,7 +1236,7 @@
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.BackColor = System.Drawing.Color.Red;
+            this.buttonLogOut.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonLogOut.Location = new System.Drawing.Point(931, 558);
@@ -1253,7 +1279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1149, 636);
             this.Controls.Add(this.buttonRemoveFromList);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -1396,5 +1422,6 @@
         private System.Windows.Forms.ListBox listBoxFriends;
         private System.Windows.Forms.BindingSource friendListBindingSource;
         private System.Windows.Forms.BindingSource groupBindingSource;
+        private System.Windows.Forms.CheckBox checkBoxDarkMode;
     }
 }

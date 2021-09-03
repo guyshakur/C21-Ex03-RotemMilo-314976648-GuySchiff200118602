@@ -11,12 +11,19 @@ using FacebookWinFormsApp.CostumText;
 using FacebookWinFormsApp.Builder;
 using WPFCustomMessageBox;
 using MessageBox = System.Windows.Forms.MessageBox;
+using System.Drawing;
+using FacebookWinFormsApp.Forms;
 
 namespace FacebookWinFormsApp
 {
+    public delegate void DarkModeDelegeate(bool i_Dark);
+
     public partial class MainForm : Form
     {
         private readonly List<object> r_LastPostsCollection = new List<object>();
+        public event DarkModeDelegeate DarkAction;
+        private readonly Theme r_OriginalTheme = new Theme(Color.LightCyan, Color.Black,Color.DodgerBlue,Color.White);
+        private readonly Theme r_DarkModeTheme = new Theme(Color.Black, Color.GhostWhite,Color.Gray,Color.White);
 
         public LoginFacade LoginFacade { get; set; }
 
@@ -24,6 +31,20 @@ namespace FacebookWinFormsApp
         {
             LoginFacade = new LoginFacade();
             LoginFacade.LoginUser = m_LoginUser;
+            DarkAction += makeDark;
+        }
+        public void makeDark(bool i_Dark)
+        {
+            if (i_Dark)
+            {
+                r_DarkModeTheme.MakeOnlyFormTheme(this);
+                r_DarkModeTheme.MakeThemeOnControls(Controls);
+            }
+            else
+            {
+                r_OriginalTheme.MakeOnlyFormTheme(this);
+                r_OriginalTheme.MakeThemeOnControls(Controls);
+            }
         }
 
         public CustomText CustomText { get; set; }
@@ -107,9 +128,9 @@ namespace FacebookWinFormsApp
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             LoginFacade.LogOut();
-            LoginPageForm formLoginPage = new LoginPageForm();
-            Hide();
-            formLoginPage.ShowDialog();
+            //LoginPageForm formLoginPage = new LoginPageForm();
+            //Hide();
+            //formLoginPage.ShowDialog();
             Close();
         }
 
@@ -575,6 +596,23 @@ namespace FacebookWinFormsApp
             if (radioButtonCloseFriend.Checked)
             {
                 radioButtonFarFriend.Checked = false;
+            }
+        }
+
+        private void checkBoxDarkMode_CheckedChanged(object sender, EventArgs e)
+        {
+            OnCheckBoxChange();
+        }
+
+        protected virtual void OnCheckBoxChange()
+        {
+            if (checkBoxDarkMode.Checked)
+            {
+                DarkAction?.Invoke(true);
+            }
+            else
+            {
+                DarkAction?.Invoke(false);
             }
         }
     }
