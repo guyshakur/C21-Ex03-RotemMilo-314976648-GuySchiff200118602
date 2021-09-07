@@ -109,6 +109,12 @@
     <Compile Include="Builder\Factory\BirthdayActivityBuilderFactory.cs" />
     <Compile Include="Builder\FarFriendsActivityBirthdayBuilder.cs" />
     <Compile Include="Builder\IBirthday.cs" />
+    <Compile Include="Command\CommandInvoker.cs" />
+    <Compile Include="Command\EditPostCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\RemoveAllCustomPostsCommand.cs" />
+    <Compile Include="Command\RemoveCustomPostCommand.cs" />
+    <Compile Include="Command\SaveCutsomPostCommand.cs" />
     <Compile Include="Facade\LoginFacade.cs" />
     <Compile Include="Proxy\HebrewDateDetails.cs" />
     <Compile Include="Proxy\MonthCalendarProxy.cs">
@@ -117,7 +123,6 @@
     <Compile Include="Stradegy\IFileStradegy.cs" />
     <Compile Include="Stradegy\Settings.cs" />
     <Compile Include="Theme.cs" />
-    <Compile Include="Utils\AppSettings.cs" />
     <Compile Include="CustomTextFeature\CustomText.cs" />
     <Compile Include="Utils\XmlFileUtils.cs" />
     <Compile Include="FinanceFeature\FinanceFeature.cs" />

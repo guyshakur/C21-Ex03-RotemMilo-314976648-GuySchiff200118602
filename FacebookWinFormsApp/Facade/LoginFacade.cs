@@ -9,7 +9,6 @@ namespace FacebookWinFormsApp
 {
     public class LoginFacade
     {
-        public AppSettings AppSettings { get; set; }
         public Settings Settings { get; set; }
 
         public User LoginUser { get; set; }
