@@ -12,7 +12,8 @@ using FacebookWinFormsApp.Builder;
 using WPFCustomMessageBox;
 using MessageBox = System.Windows.Forms.MessageBox;
 using System.Drawing;
-using FacebookWinFormsApp.Forms;
+using FacebookWinFormsApp.Command;
+using FacebookWinFormsApp.Observer.Proxy;
 
 namespace FacebookWinFormsApp
 {
@@ -21,18 +22,18 @@ namespace FacebookWinFormsApp
     public partial class MainForm : FormTheme
     {
         private readonly List<object> r_LastPostsCollection = new List<object>();
-        public event DarkModeDelegeate DarkAction;
-        private readonly Theme r_OriginalTheme = new Theme(Color.LightCyan, Color.Black,Color.DodgerBlue,Color.White);
-        private readonly Theme r_DarkModeTheme = new Theme(Color.Black, Color.GhostWhite,Color.Gray,Color.White);
+        public ColorSchemeNotifyerDelegate ColorSchemeNotifyerDelegate { get; set; }
+        public CommandInvoker CommandInvoker { get; set; }
 
         public LoginFacade LoginFacade { get; set; }
 
 
         public MainForm(User m_LoginUser):base(new ColorScheme(Color.Black, Color.GhostWhite))
         {
+            CommandInvoker = new CommandInvoker();
             LoginFacade = new LoginFacade();
             LoginFacade.LoginUser = m_LoginUser;
-            DarkAction += makeDark;
+            ColorSchemeNotifyerDelegate += makeDark;
         }
         public void makeDark(bool i_Dark)
         {

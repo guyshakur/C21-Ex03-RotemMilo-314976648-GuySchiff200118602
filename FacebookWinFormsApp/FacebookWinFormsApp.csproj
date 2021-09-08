@@ -154,7 +154,6 @@
     </Compile>
     <Compile Include="Stradegy\IFileStradegy.cs" />
     <Compile Include="Stradegy\Settings.cs" />
-    <Compile Include="Theme.cs" />
     <Compile Include="Utils\AppSettings.cs" />
     <Compile Include="CustomTextFeature\CustomText.cs" />
     <Compile Include="Utils\XmlFileUtils.cs" />
