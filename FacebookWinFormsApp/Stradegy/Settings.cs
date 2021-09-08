@@ -12,7 +12,6 @@ namespace FacebookWinFormsApp.Stradegy
         private static readonly string sr_fileName = "Settings.txt";
         private static IFileStradegy sr_IFileStradegy;
         public bool RemeberUser { get; set; }
-        public bool IsInDarkMode { get; set; }
         public string LastAcsessToken { get; set; }
         private Settings()
         {
