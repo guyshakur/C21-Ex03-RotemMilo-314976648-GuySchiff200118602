@@ -22,7 +22,7 @@ namespace FacebookWinFormsApp
     public partial class MainForm : FormTheme
     {
         private readonly List<object> r_LastPostsCollection = new List<object>();
-        public ColorSchemeNotifyerDelegate ColorSchemeNotifyerDelegate { get; set; }
+        private ColorSchemeNotifyerDelegate ColorSchemeNotifyerDelegate;
         public CommandInvoker CommandInvoker { get; set; }
 
         public LoginFacade LoginFacade { get; set; }
@@ -33,20 +33,8 @@ namespace FacebookWinFormsApp
             CommandInvoker = new CommandInvoker();
             LoginFacade = new LoginFacade();
             LoginFacade.LoginUser = m_LoginUser;
-            ColorSchemeNotifyerDelegate += makeDark;
-        }
-        public void makeDark(bool i_Dark)
-        {
-            if (i_Dark)
-            {
-                r_DarkModeTheme.MakeOnlyFormTheme(this);
-                r_DarkModeTheme.MakeThemeOnControls(Controls);
-            }
-            else
-            {
-                r_OriginalTheme.MakeOnlyFormTheme(this);
-                r_OriginalTheme.MakeThemeOnControls(Controls);
-            }
+            ColorSchemeNotifyerDelegate += enableOrDisableColorScheme;
+            InitializeComponent();
         }
 
         public CustomText CustomText { get; set; }
