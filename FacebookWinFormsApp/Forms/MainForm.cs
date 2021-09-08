@@ -12,46 +12,34 @@ using FacebookWinFormsApp.Builder;
 using WPFCustomMessageBox;
 using MessageBox = System.Windows.Forms.MessageBox;
 using System.Drawing;
-using FacebookWinFormsApp.Forms;
+using FacebookWinFormsApp.Observer.Proxy;
 
 namespace FacebookWinFormsApp
 {
-    public delegate void DarkModeDelegeate(bool i_Dark);
+    public delegate void ColorSchemeNotifyerDelegate(bool i_Dark);
 
-    public partial class MainForm : Form
+    public partial class MainForm : FormTheme
     {
         private readonly List<object> r_LastPostsCollection = new List<object>();
-        public event DarkModeDelegeate DarkAction;
-        private readonly Theme r_OriginalTheme = new Theme(Color.LightCyan, Color.Black,Color.DodgerBlue,Color.White);
-        private readonly Theme r_DarkModeTheme = new Theme(Color.Black, Color.GhostWhite,Color.Gray,Color.White);
+        private ColorSchemeNotifyerDelegate ColorSchemeNotifyerDelegate;
+        
 
         public LoginFacade LoginFacade { get; set; }
 
-        public MainForm(User m_LoginUser)
+
+        public MainForm(User m_LoginUser):base(new ColorScheme(Color.Black, Color.GhostWhite))
         {
             LoginFacade = new LoginFacade();
             LoginFacade.LoginUser = m_LoginUser;
-            DarkAction += makeDark;
-        }
-        public void makeDark(bool i_Dark)
-        {
-            if (i_Dark)
-            {
-                r_DarkModeTheme.MakeOnlyFormTheme(this);
-                r_DarkModeTheme.MakeThemeOnControls(Controls);
-            }
-            else
-            {
-                r_OriginalTheme.MakeOnlyFormTheme(this);
-                r_OriginalTheme.MakeThemeOnControls(Controls);
-            }
+            ColorSchemeNotifyerDelegate += enableOrDisableColorScheme;
+            InitializeComponent();
         }
 
         public CustomText CustomText { get; set; }
 
         protected override void OnLoad(EventArgs e)
         {
-            InitializeComponent();
+            base.OnLoad(e);
             fillCustomPostsBoxFromFile();
             fetchLoginDetails();
         }
@@ -527,7 +515,7 @@ namespace FacebookWinFormsApp
                 }
                 else if (result == MessageBoxResult.Cancel)
                 {
-                    this.buttonRemoveFromList.SelectedTab = tabProfile;
+                    this.tabControlMain.SelectedTab = tabProfile;
                     this.textBoxPost.Text = post;
                     listBoxCustomPosts.ClearSelected();
                 }
@@ -536,7 +524,7 @@ namespace FacebookWinFormsApp
 
         private void buttonChooseCustomedPost_Click(object sender, EventArgs e)
         {
-            buttonRemoveFromList.SelectedTab = tabCustomPost;
+            tabControlMain.SelectedTab = tabCustomPost;
         }
 
         private void buttonFetchGroups_Click(object sender, EventArgs e)
@@ -606,14 +594,27 @@ namespace FacebookWinFormsApp
 
         protected virtual void OnCheckBoxChange()
         {
+            notifyAllListeners();
+        }
+
+        private void notifyAllListeners()
+        {
             if (checkBoxDarkMode.Checked)
             {
-                DarkAction?.Invoke(true);
+                ColorSchemeNotifyerDelegate?.Invoke(true);
             }
             else
             {
-                DarkAction?.Invoke(false);
+                ColorSchemeNotifyerDelegate?.Invoke(false);
             }
+        }
+        public void AddListeners(ColorSchemeNotifyerDelegate i_ColorSchemeNotifyerDelegate)
+        {
+            ColorSchemeNotifyerDelegate += i_ColorSchemeNotifyerDelegate;
+        }
+        public void RemoveListeners(ColorSchemeNotifyerDelegate i_ColorSchemeNotifyerDelegate)
+        {
+            ColorSchemeNotifyerDelegate -= i_ColorSchemeNotifyerDelegate;
         }
     }
 }

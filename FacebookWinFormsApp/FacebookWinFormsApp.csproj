@@ -110,13 +110,44 @@
     <Compile Include="Builder\FarFriendsActivityBirthdayBuilder.cs" />
     <Compile Include="Builder\IBirthday.cs" />
     <Compile Include="Facade\LoginFacade.cs" />
+    <Compile Include="Observer\Proxy\CheckBoxTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\ColorScheme.cs" />
+    <Compile Include="Observer\Proxy\PanelTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\FormTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\IThemable.cs" />
+    <Compile Include="Observer\Proxy\TabControlTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\TabPageTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\TextBoxTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\ListBoxTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\ButtonTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\LabelTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Observer\Proxy\ThemeControlMaker.cs" />
+    <Compile Include="Observer\Proxy\ThemeComponentMaker.cs" />
+    <Compile Include="Observer\Proxy\ThemeMaker.cs" />
     <Compile Include="Proxy\HebrewDateDetails.cs" />
     <Compile Include="Proxy\MonthCalendarProxy.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Stradegy\IFileStradegy.cs" />
     <Compile Include="Stradegy\Settings.cs" />
-    <Compile Include="Theme.cs" />
     <Compile Include="Utils\AppSettings.cs" />
     <Compile Include="CustomTextFeature\CustomText.cs" />
     <Compile Include="Utils\XmlFileUtils.cs" />
@@ -193,9 +224,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Observer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

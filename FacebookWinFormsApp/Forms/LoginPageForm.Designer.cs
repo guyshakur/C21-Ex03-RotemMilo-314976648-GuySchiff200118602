@@ -32,7 +32,7 @@ namespace FacebookWinFormsApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPageForm));
-            this.buttonLogin = new System.Windows.Forms.Button();
+            this.buttonLogin = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.PictureLogoBox = new System.Windows.Forms.PictureBox();
             this.rememberMeChecked = new System.Windows.Forms.CheckBox();
             this.labelLogin = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@ namespace FacebookWinFormsApp
             this.buttonLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLogin.BackgroundImage")));
             this.buttonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonLogin.Location = new System.Drawing.Point(32, 225);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(389, 146);
             this.buttonLogin.TabIndex = 36;
@@ -57,7 +57,7 @@ namespace FacebookWinFormsApp
             this.PictureLogoBox.BackgroundImage = global::FacebookWinFormsApp.Properties.Resources.logo;
             this.PictureLogoBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PictureLogoBox.Location = new System.Drawing.Point(76, 46);
-            this.PictureLogoBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureLogoBox.Margin = new System.Windows.Forms.Padding(4);
             this.PictureLogoBox.Name = "PictureLogoBox";
             this.PictureLogoBox.Size = new System.Drawing.Size(299, 138);
             this.PictureLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -68,7 +68,7 @@ namespace FacebookWinFormsApp
             // 
             this.rememberMeChecked.AutoSize = true;
             this.rememberMeChecked.Location = new System.Drawing.Point(32, 197);
-            this.rememberMeChecked.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rememberMeChecked.Margin = new System.Windows.Forms.Padding(4);
             this.rememberMeChecked.Name = "rememberMeChecked";
             this.rememberMeChecked.Size = new System.Drawing.Size(122, 21);
             this.rememberMeChecked.TabIndex = 54;
@@ -94,7 +94,7 @@ namespace FacebookWinFormsApp
             this.Controls.Add(this.rememberMeChecked);
             this.Controls.Add(this.PictureLogoBox);
             this.Controls.Add(this.buttonLogin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginPageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -106,7 +106,7 @@ namespace FacebookWinFormsApp
 
         #endregion
 
-        private System.Windows.Forms.Button buttonLogin;
+        private         FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonLogin;
         private System.Windows.Forms.PictureBox PictureLogoBox;
         private System.Windows.Forms.CheckBox rememberMeChecked;
         private System.Windows.Forms.Label labelLogin;
