@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FacebookWinFormsApp.Command;
+using System;
 using System.Collections.Generic;
 
 namespace FacebookWinFormsApp.CostumText
@@ -14,6 +15,7 @@ namespace FacebookWinFormsApp.CostumText
             m_TextMessage = new List<string>();
         }
 
+       
         public static CustomText LoadFile()
         {
             return XmlFileUtils.LoadFile(CustomText.sr_FileName, sr_CustomText) as CustomText;

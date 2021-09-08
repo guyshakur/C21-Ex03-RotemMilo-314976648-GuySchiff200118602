@@ -12,7 +12,7 @@ using FacebookWinFormsApp.Builder;
 using WPFCustomMessageBox;
 using MessageBox = System.Windows.Forms.MessageBox;
 using System.Drawing;
-using FacebookWinFormsApp.Observer.Proxy;
+using FacebookWinFormsApp.Forms;
 
 namespace FacebookWinFormsApp
 {
@@ -21,8 +21,9 @@ namespace FacebookWinFormsApp
     public partial class MainForm : FormTheme
     {
         private readonly List<object> r_LastPostsCollection = new List<object>();
-        private ColorSchemeNotifyerDelegate ColorSchemeNotifyerDelegate;
-        
+        public event DarkModeDelegeate DarkAction;
+        private readonly Theme r_OriginalTheme = new Theme(Color.LightCyan, Color.Black,Color.DodgerBlue,Color.White);
+        private readonly Theme r_DarkModeTheme = new Theme(Color.Black, Color.GhostWhite,Color.Gray,Color.White);
 
         public LoginFacade LoginFacade { get; set; }
 
@@ -31,8 +32,20 @@ namespace FacebookWinFormsApp
         {
             LoginFacade = new LoginFacade();
             LoginFacade.LoginUser = m_LoginUser;
-            ColorSchemeNotifyerDelegate += enableOrDisableColorScheme;
-            InitializeComponent();
+            DarkAction += makeDark;
+        }
+        public void makeDark(bool i_Dark)
+        {
+            if (i_Dark)
+            {
+                r_DarkModeTheme.MakeOnlyFormTheme(this);
+                r_DarkModeTheme.MakeThemeOnControls(Controls);
+            }
+            else
+            {
+                r_OriginalTheme.MakeOnlyFormTheme(this);
+                r_OriginalTheme.MakeThemeOnControls(Controls);
+            }
         }
 
         public CustomText CustomText { get; set; }
@@ -401,9 +414,14 @@ namespace FacebookWinFormsApp
         {
             if (!string.IsNullOrEmpty(textBoxCustomPost.Text))
             {
-                CustomText.createMessageAndAddToList(textBoxCustomPost.Text);
+                //CustomText.createMessageAndAddToList(textBoxCustomPost.Text);
+                //listBoxCustomPosts.Items.Add(CustomText.TextMessage.ElementAt(CustomText.TextMessage.Count - 1));
+                //CustomText.SaveToFile();
+                //textBoxCustomPost.Clear();
+                //new SaveCutsomPostCommand() { Client = CustomText, Message = textBoxCustomPost.Text }.Execute();
+                CommandInvoker.SetCommand(new SaveCutsomPostCommand() { Client = CustomText, Message = textBoxCustomPost.Text });
+                CommandInvoker.Execute();
                 listBoxCustomPosts.Items.Add(CustomText.TextMessage.ElementAt(CustomText.TextMessage.Count - 1));
-                CustomText.SaveToFile();
                 textBoxCustomPost.Clear();
             }
         }
@@ -420,11 +438,11 @@ namespace FacebookWinFormsApp
         {
             if (CustomText != null)
             {
-                if (CustomText.TextMessage.Count != 0 && listBoxCustomPosts != null)
+                if (listBoxCustomPosts != null)
                 {
                     listBoxCustomPosts.Items.Clear();
-                    CustomText.ClearMessages();
-                    CustomText.SaveToFile();
+                    CommandInvoker.SetCommand(new RemoveAllCustomPostsCommand() { Client = CustomText });
+                    CommandInvoker.Execute();
                 }
             }
         }
@@ -433,11 +451,12 @@ namespace FacebookWinFormsApp
         {
             if (CustomText != null)
             {
-                if (CustomText.TextMessage.Count != 0 && listBoxCustomPosts.SelectedItem != null)
+                if (listBoxCustomPosts.SelectedItem != null)
                 {
-                    CustomText.RemoveMessageFromList(listBoxCustomPosts.SelectedIndex);
+                    CommandInvoker.SetCommand(new RemoveCustomPostCommand() { Client = CustomText,ClientIndex=listBoxCustomPosts.SelectedIndex });
+                    CommandInvoker.Execute();
+                    //CustomText.RemoveMessageFromList(listBoxCustomPosts.SelectedIndex);
                     listBoxCustomPosts.Items.Remove(listBoxCustomPosts.SelectedItem);
-                    CustomText.SaveToFile();
                 }
             }
         }
@@ -469,7 +488,7 @@ namespace FacebookWinFormsApp
         {
             if (CustomText != null)
             {
-                if (CustomText.TextMessage.Count != 0 && listBoxCustomPosts.SelectedItem != null)
+                if (listBoxCustomPosts.SelectedItem != null)
                 {
                     int index = listBoxCustomPosts.SelectedIndex;
                     textBoxCustomPost.Text = listBoxCustomPosts.SelectedItem.ToString();
