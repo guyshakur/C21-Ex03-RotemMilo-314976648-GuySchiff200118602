@@ -10,7 +10,7 @@ namespace FacebookWinFormsApp.CostumText
         private static readonly CustomText sr_CustomText = new CustomText();
         private List<string> m_TextMessage;
 
-        private CustomText()
+        public CustomText()
         {
             m_TextMessage = new List<string>();
         }

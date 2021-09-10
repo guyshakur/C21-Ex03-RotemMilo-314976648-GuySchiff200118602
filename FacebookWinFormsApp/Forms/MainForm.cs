@@ -24,7 +24,6 @@ namespace FacebookWinFormsApp
         private readonly List<object> r_LastPostsCollection = new List<object>();
         private ColorSchemeNotifyerDelegate ColorSchemeNotifyerDelegate;
         public CommandInvoker CommandInvoker { get; set; }
-
         public LoginFacade LoginFacade { get; set; }
 
 
