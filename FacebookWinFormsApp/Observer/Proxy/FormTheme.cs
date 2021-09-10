@@ -16,6 +16,7 @@ namespace FacebookWinFormsApp.Observer.Proxy
         private const int k_ChildrenBrigthness = 20;
         protected readonly ColorScheme r_NewColorScheme;
 
+
         public FormTheme(ColorScheme i_ColorScheme)
         {
             r_NewColorScheme = i_ColorScheme;
@@ -55,6 +56,7 @@ namespace FacebookWinFormsApp.Observer.Proxy
                 r_ThemeComponentMaker.ClearToOriginTheme();
             }
         }
+
         ThemeMaker IThemable.ThemeMaker => r_ThemeComponentMaker;
     }
 }
