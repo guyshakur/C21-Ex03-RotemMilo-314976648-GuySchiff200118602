@@ -34,26 +34,26 @@ namespace FacebookWinFormsApp
         {
             this.components = new System.ComponentModel.Container();
             FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabFriendsAndGroups;
-            this.panelTheme9 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.panelThemeGroups = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
             this.imageNormalPictureBox = new System.Windows.Forms.PictureBox();
             this.groupBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonFetchGroups = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.buttonThemeFetchGroups = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.panelTheme10 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.listBoxGroups = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
-            this.panelTheme6 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.listBoxThemeGroups = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.panelThemeFriends = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
             this.monthCalendarBirthday = new FacebookWinFormsApp.Proxy.MonthCalendarProxy();
             this.radioButtonCloseFriend = new System.Windows.Forms.RadioButton();
             this.radioButtonFarFriend = new System.Windows.Forms.RadioButton();
-            this.buttonMakeBirthday = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.buttonThemeMakeBirthday = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.labelFriendEmail = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.buttonFetchFriends = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.buttonThemeFetchFriends = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.pictureBoxFriend = new System.Windows.Forms.PictureBox();
             this.labelFriendLastName = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.labelFriendGender = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.labelFriendFirstName = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.labelFriendBirthday = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.panelTheme7 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.listBoxFriends = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.listBoxThemeFriends = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
             this.friendListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabCustomPost = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
             this.panel2 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
@@ -67,93 +67,93 @@ namespace FacebookWinFormsApp
             this.textBoxCustomPost = new FacebookWinFormsApp.Observer.Proxy.TextBoxTheme();
             this.buttonClearText = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.buttonSaveCustomPostToList = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.tabFinance = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
-            this.labelSearchStock = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.tabPageThemeFinance = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
+            this.labelThemeSearchStock = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.textBoxSearchStock = new FacebookWinFormsApp.Observer.Proxy.TextBoxTheme();
             this.pictureBoxStock = new System.Windows.Forms.PictureBox();
-            this.labelStockIpo = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelStockChanges = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.buttonFetchStockDetails = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.labelStockPrice = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeStockIpo = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeStockChanges = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.buttonThemeFetchStockDetails = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.labelThemeStockPrice = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.tabAlbums = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
-            this.panelTheme5 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.buttonLike = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.panelThemePreview = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.buttonThemeLike = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.label5 = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
-            this.label4 = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.listBoxPhotosComments = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
-            this.panelTheme4 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.listBoxAlbums = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.labelThemePreview = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.listBoxThemePhotosComments = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.panelThemeAlbums = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.listBoxThemeAlbums = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
             this.buttonFetchAlbums = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.listBoxPhotos = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
-            this.label1 = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.label2 = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.tabPages = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
-            this.panelTheme1 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.listBoxThemePhotos = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.labelThemeAlbums = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemePhotos = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.tabPageThemeLikedPages = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
+            this.panelThemeLikedPagesBrowser = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
             this.webBrowserPages = new System.Windows.Forms.WebBrowser();
-            this.panel3 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.buttonLikedPages = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.listBoxLikedPages = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
-            this.tabProfile = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
-            this.labelBirthday = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelFirstName = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelLastName = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.checkBoxDarkMode = new FacebookWinFormsApp.Observer.Proxy.CheckBoxTheme();
-            this.buttonChooseCustomedPost = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.panelThemeLikedPages = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.buttonThemeLikedPages = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.listBoxThemeLikedPages = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.tabPageThemeProfile = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
+            this.labelThemeBirthday = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeFirstName = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeLastName = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.checkBoxThemeDarkMode = new FacebookWinFormsApp.Observer.Proxy.CheckBoxTheme();
+            this.buttonThemeChooseCustomedPost = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.pictureBoxWeatherPredict = new System.Windows.Forms.PictureBox();
-            this.labelWeatherDetails = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeWeatherDetails = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
             this.labelLastUpdate = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelTemperatureInFahrnheit = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelTemperatureInCelcius = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelPredictWeather = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelCity = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelCountry = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.buttonFetchWeatherDetails = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.buttonPost = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.textBoxPost = new FacebookWinFormsApp.Observer.Proxy.TextBoxTheme();
-            this.labelEmail = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.labelGender = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.buttonLogOut = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.labelThemeTemperatureInFahrnheit = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeTemperatureInCelcius = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemePredictWeather = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeCity = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeCountry = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.buttonThemeFetchWeatherDetails = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.buttonThemePost = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.textBoxThemePost = new FacebookWinFormsApp.Observer.Proxy.TextBoxTheme();
+            this.labelThemeEmail = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.labelThemeGender = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.buttonThemeLogOut = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
             this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
-            this.tabControlMain = new FacebookWinFormsApp.Observer.Proxy.TabControlTheme();
+            this.tabControlThemeMain = new FacebookWinFormsApp.Observer.Proxy.TabControlTheme();
             this.tabPosts = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
-            this.panelTheme3 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.buttonFetchPosts = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
-            this.listBoxPosts = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
-            this.textBoxSearch = new FacebookWinFormsApp.Observer.Proxy.TextBoxTheme();
-            this.checkBoxSortPostsByOrder = new FacebookWinFormsApp.Observer.Proxy.CheckBoxTheme();
-            this.label7 = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
-            this.panelTheme2 = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
-            this.listBoxComments = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.panelThemePosts = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.buttonThemeFetchPosts = new FacebookWinFormsApp.Observer.Proxy.ButtonTheme();
+            this.listBoxThemePosts = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
+            this.textBoxThemeSearch = new FacebookWinFormsApp.Observer.Proxy.TextBoxTheme();
+            this.checkBoxThemeSortPostsByOrder = new FacebookWinFormsApp.Observer.Proxy.CheckBoxTheme();
+            this.labelThemeSearchAutoComplete = new FacebookWinFormsApp.Observer.Proxy.LabelTheme();
+            this.panelThemeComments = new FacebookWinFormsApp.Observer.Proxy.PanelTheme();
+            this.listBoxThemeComments = new FacebookWinFormsApp.Observer.Proxy.ListBoxTheme();
             tabFriendsAndGroups = new FacebookWinFormsApp.Observer.Proxy.TabPageTheme();
             tabFriendsAndGroups.SuspendLayout();
-            this.panelTheme9.SuspendLayout();
+            this.panelThemeGroups.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageNormalPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).BeginInit();
             this.panelTheme10.SuspendLayout();
-            this.panelTheme6.SuspendLayout();
+            this.panelThemeFriends.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFriend)).BeginInit();
             this.panelTheme7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.friendListBindingSource)).BeginInit();
             this.tabCustomPost.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tabFinance.SuspendLayout();
+            this.tabPageThemeFinance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStock)).BeginInit();
             this.tabAlbums.SuspendLayout();
-            this.panelTheme5.SuspendLayout();
+            this.panelThemePreview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
-            this.panelTheme4.SuspendLayout();
-            this.tabPages.SuspendLayout();
-            this.panelTheme1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.tabProfile.SuspendLayout();
+            this.panelThemeAlbums.SuspendLayout();
+            this.tabPageThemeLikedPages.SuspendLayout();
+            this.panelThemeLikedPagesBrowser.SuspendLayout();
+            this.panelThemeLikedPages.SuspendLayout();
+            this.tabPageThemeProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeatherPredict)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
-            this.tabControlMain.SuspendLayout();
+            this.tabControlThemeMain.SuspendLayout();
             this.tabPosts.SuspendLayout();
-            this.panelTheme3.SuspendLayout();
-            this.panelTheme2.SuspendLayout();
+            this.panelThemePosts.SuspendLayout();
+            this.panelThemeComments.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabFriendsAndGroups
@@ -161,9 +161,9 @@ namespace FacebookWinFormsApp
             tabFriendsAndGroups.AutoScroll = true;
             tabFriendsAndGroups.BackColor = System.Drawing.Color.LightCyan;
             tabFriendsAndGroups.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            tabFriendsAndGroups.Controls.Add(this.panelTheme9);
+            tabFriendsAndGroups.Controls.Add(this.panelThemeGroups);
             tabFriendsAndGroups.Controls.Add(this.panelTheme10);
-            tabFriendsAndGroups.Controls.Add(this.panelTheme6);
+            tabFriendsAndGroups.Controls.Add(this.panelThemeFriends);
             tabFriendsAndGroups.Controls.Add(this.panelTheme7);
             tabFriendsAndGroups.Location = new System.Drawing.Point(4, 25);
             tabFriendsAndGroups.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -173,14 +173,14 @@ namespace FacebookWinFormsApp
             tabFriendsAndGroups.TabIndex = 5;
             tabFriendsAndGroups.Text = "Friends & Groups";
             // 
-            // panelTheme9
+            // panelThemeGroups
             // 
-            this.panelTheme9.Controls.Add(this.imageNormalPictureBox);
-            this.panelTheme9.Controls.Add(this.buttonFetchGroups);
-            this.panelTheme9.Location = new System.Drawing.Point(332, 321);
-            this.panelTheme9.Name = "panelTheme9";
-            this.panelTheme9.Size = new System.Drawing.Size(749, 269);
-            this.panelTheme9.TabIndex = 19;
+            this.panelThemeGroups.Controls.Add(this.imageNormalPictureBox);
+            this.panelThemeGroups.Controls.Add(this.buttonThemeFetchGroups);
+            this.panelThemeGroups.Location = new System.Drawing.Point(332, 321);
+            this.panelThemeGroups.Name = "panelThemeGroups";
+            this.panelThemeGroups.Size = new System.Drawing.Size(749, 269);
+            this.panelThemeGroups.TabIndex = 19;
             // 
             // imageNormalPictureBox
             // 
@@ -199,61 +199,61 @@ namespace FacebookWinFormsApp
             // 
             this.groupBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Group);
             // 
-            // buttonFetchGroups
+            // buttonThemeFetchGroups
             // 
-            this.buttonFetchGroups.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonFetchGroups.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonFetchGroups.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonFetchGroups.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFetchGroups.Location = new System.Drawing.Point(49, 227);
-            this.buttonFetchGroups.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonFetchGroups.Name = "buttonFetchGroups";
-            this.buttonFetchGroups.Size = new System.Drawing.Size(328, 36);
-            this.buttonFetchGroups.TabIndex = 17;
-            this.buttonFetchGroups.Text = "Fetch Groups";
-            this.buttonFetchGroups.UseVisualStyleBackColor = false;
-            this.buttonFetchGroups.Click += new System.EventHandler(this.buttonFetchGroups_Click);
+            this.buttonThemeFetchGroups.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonThemeFetchGroups.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeFetchGroups.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeFetchGroups.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeFetchGroups.Location = new System.Drawing.Point(49, 227);
+            this.buttonThemeFetchGroups.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemeFetchGroups.Name = "buttonThemeFetchGroups";
+            this.buttonThemeFetchGroups.Size = new System.Drawing.Size(328, 36);
+            this.buttonThemeFetchGroups.TabIndex = 17;
+            this.buttonThemeFetchGroups.Text = "Fetch Groups";
+            this.buttonThemeFetchGroups.UseVisualStyleBackColor = false;
+            this.buttonThemeFetchGroups.Click += new System.EventHandler(this.buttonFetchGroups_Click);
             // 
             // panelTheme10
             // 
-            this.panelTheme10.Controls.Add(this.listBoxGroups);
+            this.panelTheme10.Controls.Add(this.listBoxThemeGroups);
             this.panelTheme10.Location = new System.Drawing.Point(11, 321);
             this.panelTheme10.Name = "panelTheme10";
             this.panelTheme10.Size = new System.Drawing.Size(315, 263);
             this.panelTheme10.TabIndex = 18;
             // 
-            // listBoxGroups
+            // listBoxThemeGroups
             // 
-            this.listBoxGroups.AllowDrop = true;
-            this.listBoxGroups.BackColor = System.Drawing.Color.White;
-            this.listBoxGroups.DataSource = this.groupBindingSource;
-            this.listBoxGroups.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxGroups.FormattingEnabled = true;
-            this.listBoxGroups.HorizontalScrollbar = true;
-            this.listBoxGroups.ItemHeight = 16;
-            this.listBoxGroups.Location = new System.Drawing.Point(0, 0);
-            this.listBoxGroups.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxGroups.Name = "listBoxGroups";
-            this.listBoxGroups.Size = new System.Drawing.Size(315, 263);
-            this.listBoxGroups.TabIndex = 3;
+            this.listBoxThemeGroups.AllowDrop = true;
+            this.listBoxThemeGroups.BackColor = System.Drawing.Color.White;
+            this.listBoxThemeGroups.DataSource = this.groupBindingSource;
+            this.listBoxThemeGroups.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxThemeGroups.FormattingEnabled = true;
+            this.listBoxThemeGroups.HorizontalScrollbar = true;
+            this.listBoxThemeGroups.ItemHeight = 16;
+            this.listBoxThemeGroups.Location = new System.Drawing.Point(0, 0);
+            this.listBoxThemeGroups.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemeGroups.Name = "listBoxThemeGroups";
+            this.listBoxThemeGroups.Size = new System.Drawing.Size(315, 263);
+            this.listBoxThemeGroups.TabIndex = 3;
             // 
-            // panelTheme6
+            // panelThemeFriends
             // 
-            this.panelTheme6.Controls.Add(this.monthCalendarBirthday);
-            this.panelTheme6.Controls.Add(this.radioButtonCloseFriend);
-            this.panelTheme6.Controls.Add(this.radioButtonFarFriend);
-            this.panelTheme6.Controls.Add(this.buttonMakeBirthday);
-            this.panelTheme6.Controls.Add(this.labelFriendEmail);
-            this.panelTheme6.Controls.Add(this.buttonFetchFriends);
-            this.panelTheme6.Controls.Add(this.pictureBoxFriend);
-            this.panelTheme6.Controls.Add(this.labelFriendLastName);
-            this.panelTheme6.Controls.Add(this.labelFriendGender);
-            this.panelTheme6.Controls.Add(this.labelFriendFirstName);
-            this.panelTheme6.Controls.Add(this.labelFriendBirthday);
-            this.panelTheme6.Location = new System.Drawing.Point(332, 14);
-            this.panelTheme6.Name = "panelTheme6";
-            this.panelTheme6.Size = new System.Drawing.Size(749, 297);
-            this.panelTheme6.TabIndex = 17;
+            this.panelThemeFriends.Controls.Add(this.monthCalendarBirthday);
+            this.panelThemeFriends.Controls.Add(this.radioButtonCloseFriend);
+            this.panelThemeFriends.Controls.Add(this.radioButtonFarFriend);
+            this.panelThemeFriends.Controls.Add(this.buttonThemeMakeBirthday);
+            this.panelThemeFriends.Controls.Add(this.labelFriendEmail);
+            this.panelThemeFriends.Controls.Add(this.buttonThemeFetchFriends);
+            this.panelThemeFriends.Controls.Add(this.pictureBoxFriend);
+            this.panelThemeFriends.Controls.Add(this.labelFriendLastName);
+            this.panelThemeFriends.Controls.Add(this.labelFriendGender);
+            this.panelThemeFriends.Controls.Add(this.labelFriendFirstName);
+            this.panelThemeFriends.Controls.Add(this.labelFriendBirthday);
+            this.panelThemeFriends.Location = new System.Drawing.Point(332, 14);
+            this.panelThemeFriends.Name = "panelThemeFriends";
+            this.panelThemeFriends.Size = new System.Drawing.Size(749, 297);
+            this.panelThemeFriends.TabIndex = 17;
             // 
             // monthCalendarBirthday
             // 
@@ -287,20 +287,20 @@ namespace FacebookWinFormsApp
             this.radioButtonFarFriend.UseVisualStyleBackColor = true;
             this.radioButtonFarFriend.CheckedChanged += new System.EventHandler(this.radioButtonFarFriend_CheckedChanged);
             // 
-            // buttonMakeBirthday
+            // buttonThemeMakeBirthday
             // 
-            this.buttonMakeBirthday.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonMakeBirthday.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonMakeBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonMakeBirthday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonMakeBirthday.Location = new System.Drawing.Point(420, 259);
-            this.buttonMakeBirthday.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonMakeBirthday.Name = "buttonMakeBirthday";
-            this.buttonMakeBirthday.Size = new System.Drawing.Size(299, 36);
-            this.buttonMakeBirthday.TabIndex = 30;
-            this.buttonMakeBirthday.Text = "Make Birthday";
-            this.buttonMakeBirthday.UseVisualStyleBackColor = false;
-            this.buttonMakeBirthday.Click += new System.EventHandler(this.buttonMakeBirthday_Click);
+            this.buttonThemeMakeBirthday.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonThemeMakeBirthday.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeMakeBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeMakeBirthday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeMakeBirthday.Location = new System.Drawing.Point(420, 259);
+            this.buttonThemeMakeBirthday.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.buttonThemeMakeBirthday.Name = "buttonThemeMakeBirthday";
+            this.buttonThemeMakeBirthday.Size = new System.Drawing.Size(299, 36);
+            this.buttonThemeMakeBirthday.TabIndex = 30;
+            this.buttonThemeMakeBirthday.Text = "Make Birthday";
+            this.buttonThemeMakeBirthday.UseVisualStyleBackColor = false;
+            this.buttonThemeMakeBirthday.Click += new System.EventHandler(this.buttonMakeBirthday_Click);
             // 
             // labelFriendEmail
             // 
@@ -312,20 +312,20 @@ namespace FacebookWinFormsApp
             this.labelFriendEmail.TabIndex = 28;
             this.labelFriendEmail.Text = "Email: ";
             // 
-            // buttonFetchFriends
+            // buttonThemeFetchFriends
             // 
-            this.buttonFetchFriends.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonFetchFriends.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonFetchFriends.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonFetchFriends.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFetchFriends.Location = new System.Drawing.Point(49, 259);
-            this.buttonFetchFriends.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonFetchFriends.Name = "buttonFetchFriends";
-            this.buttonFetchFriends.Size = new System.Drawing.Size(328, 36);
-            this.buttonFetchFriends.TabIndex = 29;
-            this.buttonFetchFriends.Text = "Fetch Friends";
-            this.buttonFetchFriends.UseVisualStyleBackColor = false;
-            this.buttonFetchFriends.Click += new System.EventHandler(this.buttonFetchFriends_Click);
+            this.buttonThemeFetchFriends.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonThemeFetchFriends.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeFetchFriends.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeFetchFriends.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeFetchFriends.Location = new System.Drawing.Point(49, 259);
+            this.buttonThemeFetchFriends.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemeFetchFriends.Name = "buttonThemeFetchFriends";
+            this.buttonThemeFetchFriends.Size = new System.Drawing.Size(328, 36);
+            this.buttonThemeFetchFriends.TabIndex = 29;
+            this.buttonThemeFetchFriends.Text = "Fetch Friends";
+            this.buttonThemeFetchFriends.UseVisualStyleBackColor = false;
+            this.buttonThemeFetchFriends.Click += new System.EventHandler(this.buttonFetchFriends_Click);
             // 
             // pictureBoxFriend
             // 
@@ -380,26 +380,26 @@ namespace FacebookWinFormsApp
             // 
             // panelTheme7
             // 
-            this.panelTheme7.Controls.Add(this.listBoxFriends);
+            this.panelTheme7.Controls.Add(this.listBoxThemeFriends);
             this.panelTheme7.Location = new System.Drawing.Point(11, 14);
             this.panelTheme7.Name = "panelTheme7";
             this.panelTheme7.Size = new System.Drawing.Size(315, 297);
             this.panelTheme7.TabIndex = 16;
             // 
-            // listBoxFriends
+            // listBoxThemeFriends
             // 
-            this.listBoxFriends.BackColor = System.Drawing.Color.White;
-            this.listBoxFriends.DataSource = this.friendListBindingSource;
-            this.listBoxFriends.DisplayMember = "Name";
-            this.listBoxFriends.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxFriends.FormattingEnabled = true;
-            this.listBoxFriends.ItemHeight = 16;
-            this.listBoxFriends.Location = new System.Drawing.Point(0, 0);
-            this.listBoxFriends.Name = "listBoxFriends";
-            this.listBoxFriends.Size = new System.Drawing.Size(315, 297);
-            this.listBoxFriends.TabIndex = 1;
-            this.listBoxFriends.ValueMember = "Id";
-            this.listBoxFriends.SelectedIndexChanged += new System.EventHandler(this.listBoxFriends_SelectedIndexChanged);
+            this.listBoxThemeFriends.BackColor = System.Drawing.Color.White;
+            this.listBoxThemeFriends.DataSource = this.friendListBindingSource;
+            this.listBoxThemeFriends.DisplayMember = "Name";
+            this.listBoxThemeFriends.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxThemeFriends.FormattingEnabled = true;
+            this.listBoxThemeFriends.ItemHeight = 16;
+            this.listBoxThemeFriends.Location = new System.Drawing.Point(0, 0);
+            this.listBoxThemeFriends.Name = "listBoxThemeFriends";
+            this.listBoxThemeFriends.Size = new System.Drawing.Size(315, 297);
+            this.listBoxThemeFriends.TabIndex = 1;
+            this.listBoxThemeFriends.ValueMember = "Id";
+            this.listBoxThemeFriends.SelectedIndexChanged += new System.EventHandler(this.listBoxFriends_SelectedIndexChanged);
             // 
             // friendListBindingSource
             // 
@@ -557,33 +557,33 @@ namespace FacebookWinFormsApp
             this.buttonSaveCustomPostToList.UseVisualStyleBackColor = false;
             this.buttonSaveCustomPostToList.Click += new System.EventHandler(this.buttonSaveCustomPostToList_Click);
             // 
-            // tabFinance
+            // tabPageThemeFinance
             // 
-            this.tabFinance.BackColor = System.Drawing.Color.LightCyan;
-            this.tabFinance.Controls.Add(this.labelSearchStock);
-            this.tabFinance.Controls.Add(this.textBoxSearchStock);
-            this.tabFinance.Controls.Add(this.pictureBoxStock);
-            this.tabFinance.Controls.Add(this.labelStockIpo);
-            this.tabFinance.Controls.Add(this.labelStockChanges);
-            this.tabFinance.Controls.Add(this.buttonFetchStockDetails);
-            this.tabFinance.Controls.Add(this.labelStockPrice);
-            this.tabFinance.Location = new System.Drawing.Point(4, 25);
-            this.tabFinance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabFinance.Name = "tabFinance";
-            this.tabFinance.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabFinance.Size = new System.Drawing.Size(1130, 595);
-            this.tabFinance.TabIndex = 6;
-            this.tabFinance.Text = "Finance";
+            this.tabPageThemeFinance.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageThemeFinance.Controls.Add(this.labelThemeSearchStock);
+            this.tabPageThemeFinance.Controls.Add(this.textBoxSearchStock);
+            this.tabPageThemeFinance.Controls.Add(this.pictureBoxStock);
+            this.tabPageThemeFinance.Controls.Add(this.labelThemeStockIpo);
+            this.tabPageThemeFinance.Controls.Add(this.labelThemeStockChanges);
+            this.tabPageThemeFinance.Controls.Add(this.buttonThemeFetchStockDetails);
+            this.tabPageThemeFinance.Controls.Add(this.labelThemeStockPrice);
+            this.tabPageThemeFinance.Location = new System.Drawing.Point(4, 25);
+            this.tabPageThemeFinance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPageThemeFinance.Name = "tabPageThemeFinance";
+            this.tabPageThemeFinance.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPageThemeFinance.Size = new System.Drawing.Size(1130, 595);
+            this.tabPageThemeFinance.TabIndex = 6;
+            this.tabPageThemeFinance.Text = "Finance";
             // 
-            // labelSearchStock
+            // labelThemeSearchStock
             // 
-            this.labelSearchStock.AutoSize = true;
-            this.labelSearchStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelSearchStock.Location = new System.Drawing.Point(192, 46);
-            this.labelSearchStock.Name = "labelSearchStock";
-            this.labelSearchStock.Size = new System.Drawing.Size(109, 34);
-            this.labelSearchStock.TabIndex = 15;
-            this.labelSearchStock.Text = "Search Stock \r\nBy Symbol:";
+            this.labelThemeSearchStock.AutoSize = true;
+            this.labelThemeSearchStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemeSearchStock.Location = new System.Drawing.Point(192, 46);
+            this.labelThemeSearchStock.Name = "labelThemeSearchStock";
+            this.labelThemeSearchStock.Size = new System.Drawing.Size(109, 34);
+            this.labelThemeSearchStock.TabIndex = 15;
+            this.labelThemeSearchStock.Text = "Search Stock \r\nBy Symbol:";
             // 
             // textBoxSearchStock
             // 
@@ -608,55 +608,55 @@ namespace FacebookWinFormsApp
             this.pictureBoxStock.TabIndex = 13;
             this.pictureBoxStock.TabStop = false;
             // 
-            // labelStockIpo
+            // labelThemeStockIpo
             // 
-            this.labelStockIpo.AutoSize = true;
-            this.labelStockIpo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelStockIpo.Location = new System.Drawing.Point(192, 234);
-            this.labelStockIpo.Name = "labelStockIpo";
-            this.labelStockIpo.Size = new System.Drawing.Size(80, 17);
-            this.labelStockIpo.TabIndex = 12;
-            this.labelStockIpo.Text = "Stock Ipo:";
+            this.labelThemeStockIpo.AutoSize = true;
+            this.labelThemeStockIpo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemeStockIpo.Location = new System.Drawing.Point(192, 234);
+            this.labelThemeStockIpo.Name = "labelThemeStockIpo";
+            this.labelThemeStockIpo.Size = new System.Drawing.Size(80, 17);
+            this.labelThemeStockIpo.TabIndex = 12;
+            this.labelThemeStockIpo.Text = "Stock Ipo:";
             // 
-            // labelStockChanges
+            // labelThemeStockChanges
             // 
-            this.labelStockChanges.AutoSize = true;
-            this.labelStockChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelStockChanges.Location = new System.Drawing.Point(192, 183);
-            this.labelStockChanges.Name = "labelStockChanges";
-            this.labelStockChanges.Size = new System.Drawing.Size(76, 17);
-            this.labelStockChanges.TabIndex = 11;
-            this.labelStockChanges.Text = "Changes:";
+            this.labelThemeStockChanges.AutoSize = true;
+            this.labelThemeStockChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemeStockChanges.Location = new System.Drawing.Point(192, 183);
+            this.labelThemeStockChanges.Name = "labelThemeStockChanges";
+            this.labelThemeStockChanges.Size = new System.Drawing.Size(76, 17);
+            this.labelThemeStockChanges.TabIndex = 11;
+            this.labelThemeStockChanges.Text = "Changes:";
             // 
-            // buttonFetchStockDetails
+            // buttonThemeFetchStockDetails
             // 
-            this.buttonFetchStockDetails.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonFetchStockDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonFetchStockDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFetchStockDetails.Location = new System.Drawing.Point(373, 276);
-            this.buttonFetchStockDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonFetchStockDetails.Name = "buttonFetchStockDetails";
-            this.buttonFetchStockDetails.Size = new System.Drawing.Size(147, 44);
-            this.buttonFetchStockDetails.TabIndex = 9;
-            this.buttonFetchStockDetails.Text = "Fetch Stock Details";
-            this.buttonFetchStockDetails.UseVisualStyleBackColor = false;
-            this.buttonFetchStockDetails.Click += new System.EventHandler(this.buttonFetchStockDetails_Click);
+            this.buttonThemeFetchStockDetails.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeFetchStockDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeFetchStockDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeFetchStockDetails.Location = new System.Drawing.Point(373, 276);
+            this.buttonThemeFetchStockDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemeFetchStockDetails.Name = "buttonThemeFetchStockDetails";
+            this.buttonThemeFetchStockDetails.Size = new System.Drawing.Size(147, 44);
+            this.buttonThemeFetchStockDetails.TabIndex = 9;
+            this.buttonThemeFetchStockDetails.Text = "Fetch Stock Details";
+            this.buttonThemeFetchStockDetails.UseVisualStyleBackColor = false;
+            this.buttonThemeFetchStockDetails.Click += new System.EventHandler(this.buttonFetchStockDetails_Click);
             // 
-            // labelStockPrice
+            // labelThemeStockPrice
             // 
-            this.labelStockPrice.AutoSize = true;
-            this.labelStockPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelStockPrice.Location = new System.Drawing.Point(192, 139);
-            this.labelStockPrice.Name = "labelStockPrice";
-            this.labelStockPrice.Size = new System.Drawing.Size(53, 17);
-            this.labelStockPrice.TabIndex = 8;
-            this.labelStockPrice.Text = "Stock:";
+            this.labelThemeStockPrice.AutoSize = true;
+            this.labelThemeStockPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemeStockPrice.Location = new System.Drawing.Point(192, 139);
+            this.labelThemeStockPrice.Name = "labelThemeStockPrice";
+            this.labelThemeStockPrice.Size = new System.Drawing.Size(53, 17);
+            this.labelThemeStockPrice.TabIndex = 8;
+            this.labelThemeStockPrice.Text = "Stock:";
             // 
             // tabAlbums
             // 
             this.tabAlbums.BackColor = System.Drawing.Color.LightCyan;
-            this.tabAlbums.Controls.Add(this.panelTheme5);
-            this.tabAlbums.Controls.Add(this.panelTheme4);
+            this.tabAlbums.Controls.Add(this.panelThemePreview);
+            this.tabAlbums.Controls.Add(this.panelThemeAlbums);
             this.tabAlbums.Location = new System.Drawing.Point(4, 25);
             this.tabAlbums.Margin = new System.Windows.Forms.Padding(4);
             this.tabAlbums.Name = "tabAlbums";
@@ -664,32 +664,32 @@ namespace FacebookWinFormsApp
             this.tabAlbums.TabIndex = 3;
             this.tabAlbums.Text = "Albums";
             // 
-            // panelTheme5
+            // panelThemePreview
             // 
-            this.panelTheme5.BackColor = System.Drawing.Color.LightCyan;
-            this.panelTheme5.Controls.Add(this.buttonLike);
-            this.panelTheme5.Controls.Add(this.label5);
-            this.panelTheme5.Controls.Add(this.pictureBoxPhoto);
-            this.panelTheme5.Controls.Add(this.label4);
-            this.panelTheme5.Controls.Add(this.listBoxPhotosComments);
-            this.panelTheme5.Location = new System.Drawing.Point(417, 14);
-            this.panelTheme5.Name = "panelTheme5";
-            this.panelTheme5.Size = new System.Drawing.Size(692, 578);
-            this.panelTheme5.TabIndex = 2;
+            this.panelThemePreview.BackColor = System.Drawing.Color.LightCyan;
+            this.panelThemePreview.Controls.Add(this.buttonThemeLike);
+            this.panelThemePreview.Controls.Add(this.label5);
+            this.panelThemePreview.Controls.Add(this.pictureBoxPhoto);
+            this.panelThemePreview.Controls.Add(this.labelThemePreview);
+            this.panelThemePreview.Controls.Add(this.listBoxThemePhotosComments);
+            this.panelThemePreview.Location = new System.Drawing.Point(417, 14);
+            this.panelThemePreview.Name = "panelThemePreview";
+            this.panelThemePreview.Size = new System.Drawing.Size(692, 578);
+            this.panelThemePreview.TabIndex = 2;
             // 
-            // buttonLike
+            // buttonThemeLike
             // 
-            this.buttonLike.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonLike.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonLike.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLike.Location = new System.Drawing.Point(468, 194);
-            this.buttonLike.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonLike.Name = "buttonLike";
-            this.buttonLike.Size = new System.Drawing.Size(87, 33);
-            this.buttonLike.TabIndex = 15;
-            this.buttonLike.Text = "Like";
-            this.buttonLike.UseVisualStyleBackColor = false;
-            this.buttonLike.Click += new System.EventHandler(this.buttonLike_Click);
+            this.buttonThemeLike.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeLike.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeLike.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeLike.Location = new System.Drawing.Point(468, 194);
+            this.buttonThemeLike.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemeLike.Name = "buttonThemeLike";
+            this.buttonThemeLike.Size = new System.Drawing.Size(87, 33);
+            this.buttonThemeLike.TabIndex = 15;
+            this.buttonThemeLike.Text = "Like";
+            this.buttonThemeLike.UseVisualStyleBackColor = false;
+            this.buttonThemeLike.Click += new System.EventHandler(this.buttonLike_Click);
             // 
             // label5
             // 
@@ -712,51 +712,51 @@ namespace FacebookWinFormsApp
             this.pictureBoxPhoto.TabIndex = 11;
             this.pictureBoxPhoto.TabStop = false;
             // 
-            // label4
+            // labelThemePreview
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label4.Location = new System.Drawing.Point(307, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Preview";
+            this.labelThemePreview.AutoSize = true;
+            this.labelThemePreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemePreview.Location = new System.Drawing.Point(307, 10);
+            this.labelThemePreview.Name = "labelThemePreview";
+            this.labelThemePreview.Size = new System.Drawing.Size(64, 17);
+            this.labelThemePreview.TabIndex = 13;
+            this.labelThemePreview.Text = "Preview";
             // 
-            // listBoxPhotosComments
+            // listBoxThemePhotosComments
             // 
-            this.listBoxPhotosComments.BackColor = System.Drawing.Color.White;
-            this.listBoxPhotosComments.FormattingEnabled = true;
-            this.listBoxPhotosComments.ItemHeight = 16;
-            this.listBoxPhotosComments.Location = new System.Drawing.Point(79, 288);
-            this.listBoxPhotosComments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxPhotosComments.Name = "listBoxPhotosComments";
-            this.listBoxPhotosComments.Size = new System.Drawing.Size(580, 164);
-            this.listBoxPhotosComments.TabIndex = 12;
+            this.listBoxThemePhotosComments.BackColor = System.Drawing.Color.White;
+            this.listBoxThemePhotosComments.FormattingEnabled = true;
+            this.listBoxThemePhotosComments.ItemHeight = 16;
+            this.listBoxThemePhotosComments.Location = new System.Drawing.Point(79, 288);
+            this.listBoxThemePhotosComments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemePhotosComments.Name = "listBoxThemePhotosComments";
+            this.listBoxThemePhotosComments.Size = new System.Drawing.Size(580, 164);
+            this.listBoxThemePhotosComments.TabIndex = 12;
             // 
-            // panelTheme4
+            // panelThemeAlbums
             // 
-            this.panelTheme4.BackColor = System.Drawing.Color.LightCyan;
-            this.panelTheme4.Controls.Add(this.listBoxAlbums);
-            this.panelTheme4.Controls.Add(this.buttonFetchAlbums);
-            this.panelTheme4.Controls.Add(this.listBoxPhotos);
-            this.panelTheme4.Controls.Add(this.label1);
-            this.panelTheme4.Controls.Add(this.label2);
-            this.panelTheme4.Location = new System.Drawing.Point(14, 14);
-            this.panelTheme4.Name = "panelTheme4";
-            this.panelTheme4.Size = new System.Drawing.Size(385, 578);
-            this.panelTheme4.TabIndex = 1;
+            this.panelThemeAlbums.BackColor = System.Drawing.Color.LightCyan;
+            this.panelThemeAlbums.Controls.Add(this.listBoxThemeAlbums);
+            this.panelThemeAlbums.Controls.Add(this.buttonFetchAlbums);
+            this.panelThemeAlbums.Controls.Add(this.listBoxThemePhotos);
+            this.panelThemeAlbums.Controls.Add(this.labelThemeAlbums);
+            this.panelThemeAlbums.Controls.Add(this.labelThemePhotos);
+            this.panelThemeAlbums.Location = new System.Drawing.Point(14, 14);
+            this.panelThemeAlbums.Name = "panelThemeAlbums";
+            this.panelThemeAlbums.Size = new System.Drawing.Size(385, 578);
+            this.panelThemeAlbums.TabIndex = 1;
             // 
-            // listBoxAlbums
+            // listBoxThemeAlbums
             // 
-            this.listBoxAlbums.BackColor = System.Drawing.Color.White;
-            this.listBoxAlbums.FormattingEnabled = true;
-            this.listBoxAlbums.ItemHeight = 16;
-            this.listBoxAlbums.Location = new System.Drawing.Point(0, 41);
-            this.listBoxAlbums.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxAlbums.Name = "listBoxAlbums";
-            this.listBoxAlbums.Size = new System.Drawing.Size(379, 196);
-            this.listBoxAlbums.TabIndex = 9;
-            this.listBoxAlbums.SelectedIndexChanged += new System.EventHandler(this.listBoxAlbums_SelectedIndexChanged);
+            this.listBoxThemeAlbums.BackColor = System.Drawing.Color.White;
+            this.listBoxThemeAlbums.FormattingEnabled = true;
+            this.listBoxThemeAlbums.ItemHeight = 16;
+            this.listBoxThemeAlbums.Location = new System.Drawing.Point(0, 41);
+            this.listBoxThemeAlbums.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemeAlbums.Name = "listBoxThemeAlbums";
+            this.listBoxThemeAlbums.Size = new System.Drawing.Size(379, 196);
+            this.listBoxThemeAlbums.TabIndex = 9;
+            this.listBoxThemeAlbums.SelectedIndexChanged += new System.EventHandler(this.listBoxAlbums_SelectedIndexChanged);
             // 
             // buttonFetchAlbums
             // 
@@ -773,58 +773,58 @@ namespace FacebookWinFormsApp
             this.buttonFetchAlbums.UseVisualStyleBackColor = false;
             this.buttonFetchAlbums.Click += new System.EventHandler(this.buttonFetchAlbums_Click);
             // 
-            // listBoxPhotos
+            // listBoxThemePhotos
             // 
-            this.listBoxPhotos.BackColor = System.Drawing.Color.White;
-            this.listBoxPhotos.FormattingEnabled = true;
-            this.listBoxPhotos.ItemHeight = 16;
-            this.listBoxPhotos.Location = new System.Drawing.Point(3, 288);
-            this.listBoxPhotos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxPhotos.Name = "listBoxPhotos";
-            this.listBoxPhotos.Size = new System.Drawing.Size(376, 164);
-            this.listBoxPhotos.TabIndex = 10;
-            this.listBoxPhotos.SelectedIndexChanged += new System.EventHandler(this.listBoxPhotos_SelectedIndexChanged);
+            this.listBoxThemePhotos.BackColor = System.Drawing.Color.White;
+            this.listBoxThemePhotos.FormattingEnabled = true;
+            this.listBoxThemePhotos.ItemHeight = 16;
+            this.listBoxThemePhotos.Location = new System.Drawing.Point(3, 288);
+            this.listBoxThemePhotos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemePhotos.Name = "listBoxThemePhotos";
+            this.listBoxThemePhotos.Size = new System.Drawing.Size(376, 164);
+            this.listBoxThemePhotos.TabIndex = 10;
+            this.listBoxThemePhotos.SelectedIndexChanged += new System.EventHandler(this.listBoxPhotos_SelectedIndexChanged);
             // 
-            // label1
+            // labelThemeAlbums
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(150, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Albums";
+            this.labelThemeAlbums.AutoSize = true;
+            this.labelThemeAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemeAlbums.Location = new System.Drawing.Point(150, 8);
+            this.labelThemeAlbums.Name = "labelThemeAlbums";
+            this.labelThemeAlbums.Size = new System.Drawing.Size(60, 17);
+            this.labelThemeAlbums.TabIndex = 11;
+            this.labelThemeAlbums.Text = "Albums";
             // 
-            // label2
+            // labelThemePhotos
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label2.Location = new System.Drawing.Point(150, 269);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 17);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Photos";
+            this.labelThemePhotos.AutoSize = true;
+            this.labelThemePhotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemePhotos.Location = new System.Drawing.Point(150, 269);
+            this.labelThemePhotos.Name = "labelThemePhotos";
+            this.labelThemePhotos.Size = new System.Drawing.Size(58, 17);
+            this.labelThemePhotos.TabIndex = 12;
+            this.labelThemePhotos.Text = "Photos";
             // 
-            // tabPages
+            // tabPageThemeLikedPages
             // 
-            this.tabPages.BackColor = System.Drawing.Color.LightCyan;
-            this.tabPages.Controls.Add(this.panelTheme1);
-            this.tabPages.Controls.Add(this.panel3);
-            this.tabPages.Location = new System.Drawing.Point(4, 25);
-            this.tabPages.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPages.Name = "tabPages";
-            this.tabPages.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPages.Size = new System.Drawing.Size(1130, 595);
-            this.tabPages.TabIndex = 1;
-            this.tabPages.Text = "Pages";
+            this.tabPageThemeLikedPages.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageThemeLikedPages.Controls.Add(this.panelThemeLikedPagesBrowser);
+            this.tabPageThemeLikedPages.Controls.Add(this.panelThemeLikedPages);
+            this.tabPageThemeLikedPages.Location = new System.Drawing.Point(4, 25);
+            this.tabPageThemeLikedPages.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPageThemeLikedPages.Name = "tabPageThemeLikedPages";
+            this.tabPageThemeLikedPages.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageThemeLikedPages.Size = new System.Drawing.Size(1130, 595);
+            this.tabPageThemeLikedPages.TabIndex = 1;
+            this.tabPageThemeLikedPages.Text = "Pages";
             // 
-            // panelTheme1
+            // panelThemeLikedPagesBrowser
             // 
-            this.panelTheme1.Controls.Add(this.webBrowserPages);
-            this.panelTheme1.Location = new System.Drawing.Point(423, 7);
-            this.panelTheme1.Name = "panelTheme1";
-            this.panelTheme1.Size = new System.Drawing.Size(697, 566);
-            this.panelTheme1.TabIndex = 3;
+            this.panelThemeLikedPagesBrowser.Controls.Add(this.webBrowserPages);
+            this.panelThemeLikedPagesBrowser.Location = new System.Drawing.Point(423, 7);
+            this.panelThemeLikedPagesBrowser.Name = "panelThemeLikedPagesBrowser";
+            this.panelThemeLikedPagesBrowser.Size = new System.Drawing.Size(697, 566);
+            this.panelThemeLikedPagesBrowser.TabIndex = 3;
             // 
             // webBrowserPages
             // 
@@ -836,133 +836,133 @@ namespace FacebookWinFormsApp
             this.webBrowserPages.Size = new System.Drawing.Size(697, 566);
             this.webBrowserPages.TabIndex = 1;
             // 
-            // panel3
+            // panelThemeLikedPages
             // 
-            this.panel3.Controls.Add(this.buttonLikedPages);
-            this.panel3.Controls.Add(this.listBoxLikedPages);
-            this.panel3.Location = new System.Drawing.Point(7, 7);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(367, 588);
-            this.panel3.TabIndex = 2;
+            this.panelThemeLikedPages.Controls.Add(this.buttonThemeLikedPages);
+            this.panelThemeLikedPages.Controls.Add(this.listBoxThemeLikedPages);
+            this.panelThemeLikedPages.Location = new System.Drawing.Point(7, 7);
+            this.panelThemeLikedPages.Name = "panelThemeLikedPages";
+            this.panelThemeLikedPages.Size = new System.Drawing.Size(367, 588);
+            this.panelThemeLikedPages.TabIndex = 2;
             // 
-            // buttonLikedPages
+            // buttonThemeLikedPages
             // 
-            this.buttonLikedPages.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonLikedPages.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonLikedPages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonLikedPages.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLikedPages.Location = new System.Drawing.Point(0, 560);
-            this.buttonLikedPages.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonLikedPages.Name = "buttonLikedPages";
-            this.buttonLikedPages.Size = new System.Drawing.Size(367, 28);
-            this.buttonLikedPages.TabIndex = 4;
-            this.buttonLikedPages.Text = "Fetch Liked Pages";
-            this.buttonLikedPages.UseVisualStyleBackColor = false;
-            this.buttonLikedPages.Click += new System.EventHandler(this.buttonLikedPages_Click);
+            this.buttonThemeLikedPages.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeLikedPages.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonThemeLikedPages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeLikedPages.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeLikedPages.Location = new System.Drawing.Point(0, 560);
+            this.buttonThemeLikedPages.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonThemeLikedPages.Name = "buttonThemeLikedPages";
+            this.buttonThemeLikedPages.Size = new System.Drawing.Size(367, 28);
+            this.buttonThemeLikedPages.TabIndex = 4;
+            this.buttonThemeLikedPages.Text = "Fetch Liked Pages";
+            this.buttonThemeLikedPages.UseVisualStyleBackColor = false;
+            this.buttonThemeLikedPages.Click += new System.EventHandler(this.buttonLikedPages_Click);
             // 
-            // listBoxLikedPages
+            // listBoxThemeLikedPages
             // 
-            this.listBoxLikedPages.BackColor = System.Drawing.Color.White;
-            this.listBoxLikedPages.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxLikedPages.FormattingEnabled = true;
-            this.listBoxLikedPages.ItemHeight = 16;
-            this.listBoxLikedPages.Location = new System.Drawing.Point(0, 0);
-            this.listBoxLikedPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxLikedPages.Name = "listBoxLikedPages";
-            this.listBoxLikedPages.Size = new System.Drawing.Size(367, 588);
-            this.listBoxLikedPages.TabIndex = 3;
-            this.listBoxLikedPages.SelectedIndexChanged += new System.EventHandler(this.listBoxLikedPages_SelectedIndexChanged);
+            this.listBoxThemeLikedPages.BackColor = System.Drawing.Color.White;
+            this.listBoxThemeLikedPages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxThemeLikedPages.FormattingEnabled = true;
+            this.listBoxThemeLikedPages.ItemHeight = 16;
+            this.listBoxThemeLikedPages.Location = new System.Drawing.Point(0, 0);
+            this.listBoxThemeLikedPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemeLikedPages.Name = "listBoxThemeLikedPages";
+            this.listBoxThemeLikedPages.Size = new System.Drawing.Size(367, 588);
+            this.listBoxThemeLikedPages.TabIndex = 3;
+            this.listBoxThemeLikedPages.SelectedIndexChanged += new System.EventHandler(this.listBoxLikedPages_SelectedIndexChanged);
             // 
-            // tabProfile
+            // tabPageThemeProfile
             // 
-            this.tabProfile.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.tabProfile.BackColor = System.Drawing.Color.LightCyan;
-            this.tabProfile.Controls.Add(this.labelBirthday);
-            this.tabProfile.Controls.Add(this.labelFirstName);
-            this.tabProfile.Controls.Add(this.labelLastName);
-            this.tabProfile.Controls.Add(this.checkBoxDarkMode);
-            this.tabProfile.Controls.Add(this.buttonChooseCustomedPost);
-            this.tabProfile.Controls.Add(this.pictureBoxWeatherPredict);
-            this.tabProfile.Controls.Add(this.labelWeatherDetails);
-            this.tabProfile.Controls.Add(this.labelLastUpdate);
-            this.tabProfile.Controls.Add(this.labelTemperatureInFahrnheit);
-            this.tabProfile.Controls.Add(this.labelTemperatureInCelcius);
-            this.tabProfile.Controls.Add(this.labelPredictWeather);
-            this.tabProfile.Controls.Add(this.labelCity);
-            this.tabProfile.Controls.Add(this.labelCountry);
-            this.tabProfile.Controls.Add(this.buttonFetchWeatherDetails);
-            this.tabProfile.Controls.Add(this.buttonPost);
-            this.tabProfile.Controls.Add(this.textBoxPost);
-            this.tabProfile.Controls.Add(this.labelEmail);
-            this.tabProfile.Controls.Add(this.labelGender);
-            this.tabProfile.Controls.Add(this.buttonLogOut);
-            this.tabProfile.Controls.Add(this.pictureBoxProfile);
-            this.tabProfile.Location = new System.Drawing.Point(4, 25);
-            this.tabProfile.Margin = new System.Windows.Forms.Padding(4);
-            this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Padding = new System.Windows.Forms.Padding(4);
-            this.tabProfile.Size = new System.Drawing.Size(1130, 595);
-            this.tabProfile.TabIndex = 0;
-            this.tabProfile.Text = "Profile";
+            this.tabPageThemeProfile.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.tabPageThemeProfile.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeBirthday);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeFirstName);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeLastName);
+            this.tabPageThemeProfile.Controls.Add(this.checkBoxThemeDarkMode);
+            this.tabPageThemeProfile.Controls.Add(this.buttonThemeChooseCustomedPost);
+            this.tabPageThemeProfile.Controls.Add(this.pictureBoxWeatherPredict);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeWeatherDetails);
+            this.tabPageThemeProfile.Controls.Add(this.labelLastUpdate);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeTemperatureInFahrnheit);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeTemperatureInCelcius);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemePredictWeather);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeCity);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeCountry);
+            this.tabPageThemeProfile.Controls.Add(this.buttonThemeFetchWeatherDetails);
+            this.tabPageThemeProfile.Controls.Add(this.buttonThemePost);
+            this.tabPageThemeProfile.Controls.Add(this.textBoxThemePost);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeEmail);
+            this.tabPageThemeProfile.Controls.Add(this.labelThemeGender);
+            this.tabPageThemeProfile.Controls.Add(this.buttonThemeLogOut);
+            this.tabPageThemeProfile.Controls.Add(this.pictureBoxProfile);
+            this.tabPageThemeProfile.Location = new System.Drawing.Point(4, 25);
+            this.tabPageThemeProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPageThemeProfile.Name = "tabPageThemeProfile";
+            this.tabPageThemeProfile.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageThemeProfile.Size = new System.Drawing.Size(1130, 595);
+            this.tabPageThemeProfile.TabIndex = 0;
+            this.tabPageThemeProfile.Text = "Profile";
             // 
-            // labelBirthday
+            // labelThemeBirthday
             // 
-            this.labelBirthday.AutoSize = true;
-            this.labelBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBirthday.Location = new System.Drawing.Point(20, 319);
-            this.labelBirthday.Name = "labelBirthday";
-            this.labelBirthday.Size = new System.Drawing.Size(80, 17);
-            this.labelBirthday.TabIndex = 25;
-            this.labelBirthday.Text = "BirthDay: ";
+            this.labelThemeBirthday.AutoSize = true;
+            this.labelThemeBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeBirthday.Location = new System.Drawing.Point(20, 319);
+            this.labelThemeBirthday.Name = "labelThemeBirthday";
+            this.labelThemeBirthday.Size = new System.Drawing.Size(80, 17);
+            this.labelThemeBirthday.TabIndex = 25;
+            this.labelThemeBirthday.Text = "BirthDay: ";
             // 
-            // labelFirstName
+            // labelThemeFirstName
             // 
-            this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstName.Location = new System.Drawing.Point(20, 247);
-            this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(96, 17);
-            this.labelFirstName.TabIndex = 24;
-            this.labelFirstName.Text = "First Name: ";
+            this.labelThemeFirstName.AutoSize = true;
+            this.labelThemeFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeFirstName.Location = new System.Drawing.Point(20, 247);
+            this.labelThemeFirstName.Name = "labelThemeFirstName";
+            this.labelThemeFirstName.Size = new System.Drawing.Size(96, 17);
+            this.labelThemeFirstName.TabIndex = 24;
+            this.labelThemeFirstName.Text = "First Name: ";
             // 
-            // labelLastName
+            // labelThemeLastName
             // 
-            this.labelLastName.AutoSize = true;
-            this.labelLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLastName.Location = new System.Drawing.Point(20, 282);
-            this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(95, 17);
-            this.labelLastName.TabIndex = 23;
-            this.labelLastName.Text = "Last Name: ";
+            this.labelThemeLastName.AutoSize = true;
+            this.labelThemeLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeLastName.Location = new System.Drawing.Point(20, 282);
+            this.labelThemeLastName.Name = "labelThemeLastName";
+            this.labelThemeLastName.Size = new System.Drawing.Size(95, 17);
+            this.labelThemeLastName.TabIndex = 23;
+            this.labelThemeLastName.Text = "Last Name: ";
             // 
-            // checkBoxDarkMode
+            // checkBoxThemeDarkMode
             // 
-            this.checkBoxDarkMode.AutoSize = true;
-            this.checkBoxDarkMode.Location = new System.Drawing.Point(27, 445);
-            this.checkBoxDarkMode.Name = "checkBoxDarkMode";
-            this.checkBoxDarkMode.Size = new System.Drawing.Size(99, 21);
-            this.checkBoxDarkMode.TabIndex = 22;
-            this.checkBoxDarkMode.Text = "Dark Mode";
-            this.checkBoxDarkMode.UseVisualStyleBackColor = true;
-            this.checkBoxDarkMode.CheckedChanged += new System.EventHandler(this.checkBoxDarkMode_CheckedChanged);
+            this.checkBoxThemeDarkMode.AutoSize = true;
+            this.checkBoxThemeDarkMode.Location = new System.Drawing.Point(27, 445);
+            this.checkBoxThemeDarkMode.Name = "checkBoxThemeDarkMode";
+            this.checkBoxThemeDarkMode.Size = new System.Drawing.Size(99, 21);
+            this.checkBoxThemeDarkMode.TabIndex = 22;
+            this.checkBoxThemeDarkMode.Text = "Dark Mode";
+            this.checkBoxThemeDarkMode.UseVisualStyleBackColor = true;
+            this.checkBoxThemeDarkMode.CheckedChanged += new System.EventHandler(this.checkBoxDarkMode_CheckedChanged);
             // 
-            // buttonChooseCustomedPost
+            // buttonThemeChooseCustomedPost
             // 
-            this.buttonChooseCustomedPost.AutoSize = true;
-            this.buttonChooseCustomedPost.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonChooseCustomedPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonChooseCustomedPost.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonChooseCustomedPost.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonChooseCustomedPost.Location = new System.Drawing.Point(896, 78);
-            this.buttonChooseCustomedPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonChooseCustomedPost.Name = "buttonChooseCustomedPost";
-            this.buttonChooseCustomedPost.Size = new System.Drawing.Size(130, 48);
-            this.buttonChooseCustomedPost.TabIndex = 21;
-            this.buttonChooseCustomedPost.TabStop = false;
-            this.buttonChooseCustomedPost.Text = "Template Posts";
-            this.buttonChooseCustomedPost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonChooseCustomedPost.UseVisualStyleBackColor = false;
-            this.buttonChooseCustomedPost.Click += new System.EventHandler(this.buttonChooseCustomedPost_Click);
+            this.buttonThemeChooseCustomedPost.AutoSize = true;
+            this.buttonThemeChooseCustomedPost.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeChooseCustomedPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeChooseCustomedPost.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeChooseCustomedPost.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonThemeChooseCustomedPost.Location = new System.Drawing.Point(896, 78);
+            this.buttonThemeChooseCustomedPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemeChooseCustomedPost.Name = "buttonThemeChooseCustomedPost";
+            this.buttonThemeChooseCustomedPost.Size = new System.Drawing.Size(130, 48);
+            this.buttonThemeChooseCustomedPost.TabIndex = 21;
+            this.buttonThemeChooseCustomedPost.TabStop = false;
+            this.buttonThemeChooseCustomedPost.Text = "Template Posts";
+            this.buttonThemeChooseCustomedPost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThemeChooseCustomedPost.UseVisualStyleBackColor = false;
+            this.buttonThemeChooseCustomedPost.Click += new System.EventHandler(this.buttonChooseCustomedPost_Click);
             // 
             // pictureBoxWeatherPredict
             // 
@@ -978,16 +978,16 @@ namespace FacebookWinFormsApp
             this.pictureBoxWeatherPredict.TabStop = false;
             this.pictureBoxWeatherPredict.Visible = false;
             // 
-            // labelWeatherDetails
+            // labelThemeWeatherDetails
             // 
-            this.labelWeatherDetails.AutoSize = true;
-            this.labelWeatherDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWeatherDetails.Location = new System.Drawing.Point(528, 151);
-            this.labelWeatherDetails.Name = "labelWeatherDetails";
-            this.labelWeatherDetails.Size = new System.Drawing.Size(129, 17);
-            this.labelWeatherDetails.TabIndex = 19;
-            this.labelWeatherDetails.Text = "Weather Details:";
-            this.labelWeatherDetails.Visible = false;
+            this.labelThemeWeatherDetails.AutoSize = true;
+            this.labelThemeWeatherDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeWeatherDetails.Location = new System.Drawing.Point(528, 151);
+            this.labelThemeWeatherDetails.Name = "labelThemeWeatherDetails";
+            this.labelThemeWeatherDetails.Size = new System.Drawing.Size(129, 17);
+            this.labelThemeWeatherDetails.TabIndex = 19;
+            this.labelThemeWeatherDetails.Text = "Weather Details:";
+            this.labelThemeWeatherDetails.Visible = false;
             // 
             // labelLastUpdate
             // 
@@ -997,133 +997,133 @@ namespace FacebookWinFormsApp
             this.labelLastUpdate.Size = new System.Drawing.Size(0, 17);
             this.labelLastUpdate.TabIndex = 18;
             // 
-            // labelTemperatureInFahrnheit
+            // labelThemeTemperatureInFahrnheit
             // 
-            this.labelTemperatureInFahrnheit.AutoSize = true;
-            this.labelTemperatureInFahrnheit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTemperatureInFahrnheit.Location = new System.Drawing.Point(325, 287);
-            this.labelTemperatureInFahrnheit.Name = "labelTemperatureInFahrnheit";
-            this.labelTemperatureInFahrnheit.Size = new System.Drawing.Size(198, 17);
-            this.labelTemperatureInFahrnheit.TabIndex = 17;
-            this.labelTemperatureInFahrnheit.Text = "Temperture in Fahrenheit:";
-            this.labelTemperatureInFahrnheit.Visible = false;
+            this.labelThemeTemperatureInFahrnheit.AutoSize = true;
+            this.labelThemeTemperatureInFahrnheit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeTemperatureInFahrnheit.Location = new System.Drawing.Point(325, 287);
+            this.labelThemeTemperatureInFahrnheit.Name = "labelThemeTemperatureInFahrnheit";
+            this.labelThemeTemperatureInFahrnheit.Size = new System.Drawing.Size(198, 17);
+            this.labelThemeTemperatureInFahrnheit.TabIndex = 17;
+            this.labelThemeTemperatureInFahrnheit.Text = "Temperture in Fahrenheit:";
+            this.labelThemeTemperatureInFahrnheit.Visible = false;
             // 
-            // labelTemperatureInCelcius
+            // labelThemeTemperatureInCelcius
             // 
-            this.labelTemperatureInCelcius.AutoSize = true;
-            this.labelTemperatureInCelcius.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTemperatureInCelcius.Location = new System.Drawing.Point(325, 257);
-            this.labelTemperatureInCelcius.Name = "labelTemperatureInCelcius";
-            this.labelTemperatureInCelcius.Size = new System.Drawing.Size(172, 17);
-            this.labelTemperatureInCelcius.TabIndex = 16;
-            this.labelTemperatureInCelcius.Text = "Temperture in Celcius:";
-            this.labelTemperatureInCelcius.Visible = false;
+            this.labelThemeTemperatureInCelcius.AutoSize = true;
+            this.labelThemeTemperatureInCelcius.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeTemperatureInCelcius.Location = new System.Drawing.Point(325, 257);
+            this.labelThemeTemperatureInCelcius.Name = "labelThemeTemperatureInCelcius";
+            this.labelThemeTemperatureInCelcius.Size = new System.Drawing.Size(172, 17);
+            this.labelThemeTemperatureInCelcius.TabIndex = 16;
+            this.labelThemeTemperatureInCelcius.Text = "Temperture in Celcius:";
+            this.labelThemeTemperatureInCelcius.Visible = false;
             // 
-            // labelPredictWeather
+            // labelThemePredictWeather
             // 
-            this.labelPredictWeather.AutoSize = true;
-            this.labelPredictWeather.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPredictWeather.Location = new System.Drawing.Point(325, 228);
-            this.labelPredictWeather.Name = "labelPredictWeather";
-            this.labelPredictWeather.Size = new System.Drawing.Size(64, 17);
-            this.labelPredictWeather.TabIndex = 15;
-            this.labelPredictWeather.Text = "Predict:";
-            this.labelPredictWeather.Visible = false;
+            this.labelThemePredictWeather.AutoSize = true;
+            this.labelThemePredictWeather.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemePredictWeather.Location = new System.Drawing.Point(325, 228);
+            this.labelThemePredictWeather.Name = "labelThemePredictWeather";
+            this.labelThemePredictWeather.Size = new System.Drawing.Size(64, 17);
+            this.labelThemePredictWeather.TabIndex = 15;
+            this.labelThemePredictWeather.Text = "Predict:";
+            this.labelThemePredictWeather.Visible = false;
             // 
-            // labelCity
+            // labelThemeCity
             // 
-            this.labelCity.AutoSize = true;
-            this.labelCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCity.Location = new System.Drawing.Point(325, 197);
-            this.labelCity.Name = "labelCity";
-            this.labelCity.Size = new System.Drawing.Size(40, 17);
-            this.labelCity.TabIndex = 14;
-            this.labelCity.Text = "City:";
-            this.labelCity.Visible = false;
+            this.labelThemeCity.AutoSize = true;
+            this.labelThemeCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeCity.Location = new System.Drawing.Point(325, 197);
+            this.labelThemeCity.Name = "labelThemeCity";
+            this.labelThemeCity.Size = new System.Drawing.Size(40, 17);
+            this.labelThemeCity.TabIndex = 14;
+            this.labelThemeCity.Text = "City:";
+            this.labelThemeCity.Visible = false;
             // 
-            // labelCountry
+            // labelThemeCountry
             // 
-            this.labelCountry.AutoSize = true;
-            this.labelCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCountry.Location = new System.Drawing.Point(325, 167);
-            this.labelCountry.Name = "labelCountry";
-            this.labelCountry.Size = new System.Drawing.Size(69, 17);
-            this.labelCountry.TabIndex = 13;
-            this.labelCountry.Text = "Country:";
-            this.labelCountry.Visible = false;
+            this.labelThemeCountry.AutoSize = true;
+            this.labelThemeCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeCountry.Location = new System.Drawing.Point(325, 167);
+            this.labelThemeCountry.Name = "labelThemeCountry";
+            this.labelThemeCountry.Size = new System.Drawing.Size(69, 17);
+            this.labelThemeCountry.TabIndex = 13;
+            this.labelThemeCountry.Text = "Country:";
+            this.labelThemeCountry.Visible = false;
             // 
-            // buttonFetchWeatherDetails
+            // buttonThemeFetchWeatherDetails
             // 
-            this.buttonFetchWeatherDetails.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonFetchWeatherDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonFetchWeatherDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFetchWeatherDetails.Location = new System.Drawing.Point(739, 319);
-            this.buttonFetchWeatherDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonFetchWeatherDetails.Name = "buttonFetchWeatherDetails";
-            this.buttonFetchWeatherDetails.Size = new System.Drawing.Size(141, 65);
-            this.buttonFetchWeatherDetails.TabIndex = 11;
-            this.buttonFetchWeatherDetails.Text = "Refresh Weather Details ";
-            this.buttonFetchWeatherDetails.UseVisualStyleBackColor = false;
-            this.buttonFetchWeatherDetails.Visible = false;
-            this.buttonFetchWeatherDetails.Click += new System.EventHandler(this.buttonFetchWeatherDetails_Click);
+            this.buttonThemeFetchWeatherDetails.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeFetchWeatherDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeFetchWeatherDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeFetchWeatherDetails.Location = new System.Drawing.Point(739, 319);
+            this.buttonThemeFetchWeatherDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemeFetchWeatherDetails.Name = "buttonThemeFetchWeatherDetails";
+            this.buttonThemeFetchWeatherDetails.Size = new System.Drawing.Size(141, 65);
+            this.buttonThemeFetchWeatherDetails.TabIndex = 11;
+            this.buttonThemeFetchWeatherDetails.Text = "Refresh Weather Details ";
+            this.buttonThemeFetchWeatherDetails.UseVisualStyleBackColor = false;
+            this.buttonThemeFetchWeatherDetails.Visible = false;
+            this.buttonThemeFetchWeatherDetails.Click += new System.EventHandler(this.buttonFetchWeatherDetails_Click);
             // 
-            // buttonPost
+            // buttonThemePost
             // 
-            this.buttonPost.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonPost.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonPost.Location = new System.Drawing.Point(896, 32);
-            this.buttonPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonPost.Name = "buttonPost";
-            this.buttonPost.Size = new System.Drawing.Size(130, 41);
-            this.buttonPost.TabIndex = 10;
-            this.buttonPost.Text = "Post";
-            this.buttonPost.UseVisualStyleBackColor = false;
-            this.buttonPost.Click += new System.EventHandler(this.buttonPost_Click);
+            this.buttonThemePost.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemePost.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemePost.Location = new System.Drawing.Point(896, 32);
+            this.buttonThemePost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonThemePost.Name = "buttonThemePost";
+            this.buttonThemePost.Size = new System.Drawing.Size(130, 41);
+            this.buttonThemePost.TabIndex = 10;
+            this.buttonThemePost.Text = "Post";
+            this.buttonThemePost.UseVisualStyleBackColor = false;
+            this.buttonThemePost.Click += new System.EventHandler(this.buttonPost_Click);
             // 
-            // textBoxPost
+            // textBoxThemePost
             // 
-            this.textBoxPost.BackColor = System.Drawing.Color.White;
-            this.textBoxPost.Location = new System.Drawing.Point(264, 32);
-            this.textBoxPost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxPost.Multiline = true;
-            this.textBoxPost.Name = "textBoxPost";
-            this.textBoxPost.Size = new System.Drawing.Size(625, 94);
-            this.textBoxPost.TabIndex = 9;
+            this.textBoxThemePost.BackColor = System.Drawing.Color.White;
+            this.textBoxThemePost.Location = new System.Drawing.Point(264, 32);
+            this.textBoxThemePost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxThemePost.Multiline = true;
+            this.textBoxThemePost.Name = "textBoxThemePost";
+            this.textBoxThemePost.Size = new System.Drawing.Size(625, 94);
+            this.textBoxThemePost.TabIndex = 9;
             // 
-            // labelEmail
+            // labelThemeEmail
             // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(24, 392);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(57, 17);
-            this.labelEmail.TabIndex = 8;
-            this.labelEmail.Text = "Email: ";
+            this.labelThemeEmail.AutoSize = true;
+            this.labelThemeEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeEmail.Location = new System.Drawing.Point(24, 392);
+            this.labelThemeEmail.Name = "labelThemeEmail";
+            this.labelThemeEmail.Size = new System.Drawing.Size(57, 17);
+            this.labelThemeEmail.TabIndex = 8;
+            this.labelThemeEmail.Text = "Email: ";
             // 
-            // labelGender
+            // labelThemeGender
             // 
-            this.labelGender.AutoSize = true;
-            this.labelGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.Location = new System.Drawing.Point(20, 356);
-            this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(72, 17);
-            this.labelGender.TabIndex = 7;
-            this.labelGender.Text = "Gender: ";
+            this.labelThemeGender.AutoSize = true;
+            this.labelThemeGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThemeGender.Location = new System.Drawing.Point(20, 356);
+            this.labelThemeGender.Name = "labelThemeGender";
+            this.labelThemeGender.Size = new System.Drawing.Size(72, 17);
+            this.labelThemeGender.TabIndex = 7;
+            this.labelThemeGender.Text = "Gender: ";
             // 
-            // buttonLogOut
+            // buttonThemeLogOut
             // 
-            this.buttonLogOut.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonLogOut.Location = new System.Drawing.Point(931, 558);
-            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(195, 37);
-            this.buttonLogOut.TabIndex = 3;
-            this.buttonLogOut.Text = "Log Out";
-            this.buttonLogOut.UseVisualStyleBackColor = false;
-            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
+            this.buttonThemeLogOut.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThemeLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonThemeLogOut.Location = new System.Drawing.Point(931, 558);
+            this.buttonThemeLogOut.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonThemeLogOut.Name = "buttonThemeLogOut";
+            this.buttonThemeLogOut.Size = new System.Drawing.Size(195, 37);
+            this.buttonThemeLogOut.TabIndex = 3;
+            this.buttonThemeLogOut.Text = "Log Out";
+            this.buttonThemeLogOut.UseVisualStyleBackColor = false;
+            this.buttonThemeLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // pictureBoxProfile
             // 
@@ -1137,26 +1137,26 @@ namespace FacebookWinFormsApp
             this.pictureBoxProfile.TabIndex = 0;
             this.pictureBoxProfile.TabStop = false;
             // 
-            // tabControlMain
+            // tabControlThemeMain
             // 
-            this.tabControlMain.Controls.Add(this.tabProfile);
-            this.tabControlMain.Controls.Add(this.tabPages);
-            this.tabControlMain.Controls.Add(this.tabPosts);
-            this.tabControlMain.Controls.Add(this.tabAlbums);
-            this.tabControlMain.Controls.Add(tabFriendsAndGroups);
-            this.tabControlMain.Controls.Add(this.tabFinance);
-            this.tabControlMain.Controls.Add(this.tabCustomPost);
-            this.tabControlMain.Location = new System.Drawing.Point(13, 13);
-            this.tabControlMain.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControlMain.Name = "tabControlMain";
-            this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(1138, 624);
-            this.tabControlMain.TabIndex = 0;
+            this.tabControlThemeMain.Controls.Add(this.tabPageThemeProfile);
+            this.tabControlThemeMain.Controls.Add(this.tabPageThemeLikedPages);
+            this.tabControlThemeMain.Controls.Add(this.tabPosts);
+            this.tabControlThemeMain.Controls.Add(this.tabAlbums);
+            this.tabControlThemeMain.Controls.Add(tabFriendsAndGroups);
+            this.tabControlThemeMain.Controls.Add(this.tabPageThemeFinance);
+            this.tabControlThemeMain.Controls.Add(this.tabCustomPost);
+            this.tabControlThemeMain.Location = new System.Drawing.Point(13, 13);
+            this.tabControlThemeMain.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControlThemeMain.Name = "tabControlThemeMain";
+            this.tabControlThemeMain.SelectedIndex = 0;
+            this.tabControlThemeMain.Size = new System.Drawing.Size(1138, 624);
+            this.tabControlThemeMain.TabIndex = 0;
             // 
             // tabPosts
             // 
-            this.tabPosts.Controls.Add(this.panelTheme3);
-            this.tabPosts.Controls.Add(this.panelTheme2);
+            this.tabPosts.Controls.Add(this.panelThemePosts);
+            this.tabPosts.Controls.Add(this.panelThemeComments);
             this.tabPosts.Location = new System.Drawing.Point(4, 25);
             this.tabPosts.Margin = new System.Windows.Forms.Padding(4);
             this.tabPosts.Name = "tabPosts";
@@ -1165,100 +1165,100 @@ namespace FacebookWinFormsApp
             this.tabPosts.Text = "Posts";
             this.tabPosts.UseVisualStyleBackColor = true;
             // 
-            // panelTheme3
+            // panelThemePosts
             // 
-            this.panelTheme3.BackColor = System.Drawing.Color.LightCyan;
-            this.panelTheme3.Controls.Add(this.buttonFetchPosts);
-            this.panelTheme3.Controls.Add(this.listBoxPosts);
-            this.panelTheme3.Controls.Add(this.textBoxSearch);
-            this.panelTheme3.Controls.Add(this.checkBoxSortPostsByOrder);
-            this.panelTheme3.Controls.Add(this.label7);
-            this.panelTheme3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelTheme3.Location = new System.Drawing.Point(0, 0);
-            this.panelTheme3.Name = "panelTheme3";
-            this.panelTheme3.Size = new System.Drawing.Size(384, 595);
-            this.panelTheme3.TabIndex = 3;
+            this.panelThemePosts.BackColor = System.Drawing.Color.LightCyan;
+            this.panelThemePosts.Controls.Add(this.buttonThemeFetchPosts);
+            this.panelThemePosts.Controls.Add(this.listBoxThemePosts);
+            this.panelThemePosts.Controls.Add(this.textBoxThemeSearch);
+            this.panelThemePosts.Controls.Add(this.checkBoxThemeSortPostsByOrder);
+            this.panelThemePosts.Controls.Add(this.labelThemeSearchAutoComplete);
+            this.panelThemePosts.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelThemePosts.Location = new System.Drawing.Point(0, 0);
+            this.panelThemePosts.Name = "panelThemePosts";
+            this.panelThemePosts.Size = new System.Drawing.Size(384, 595);
+            this.panelThemePosts.TabIndex = 3;
             // 
-            // buttonFetchPosts
+            // buttonThemeFetchPosts
             // 
-            this.buttonFetchPosts.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonFetchPosts.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonFetchPosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonFetchPosts.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFetchPosts.Location = new System.Drawing.Point(0, 567);
-            this.buttonFetchPosts.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonFetchPosts.Name = "buttonFetchPosts";
-            this.buttonFetchPosts.Size = new System.Drawing.Size(384, 28);
-            this.buttonFetchPosts.TabIndex = 59;
-            this.buttonFetchPosts.Text = "Fetch Posts";
-            this.buttonFetchPosts.UseVisualStyleBackColor = false;
-            this.buttonFetchPosts.Click += new System.EventHandler(this.buttonFetchPosts_Click);
+            this.buttonThemeFetchPosts.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonThemeFetchPosts.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonThemeFetchPosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonThemeFetchPosts.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonThemeFetchPosts.Location = new System.Drawing.Point(0, 567);
+            this.buttonThemeFetchPosts.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonThemeFetchPosts.Name = "buttonThemeFetchPosts";
+            this.buttonThemeFetchPosts.Size = new System.Drawing.Size(384, 28);
+            this.buttonThemeFetchPosts.TabIndex = 59;
+            this.buttonThemeFetchPosts.Text = "Fetch Posts";
+            this.buttonThemeFetchPosts.UseVisualStyleBackColor = false;
+            this.buttonThemeFetchPosts.Click += new System.EventHandler(this.buttonFetchPosts_Click);
             // 
-            // listBoxPosts
+            // listBoxThemePosts
             // 
-            this.listBoxPosts.BackColor = System.Drawing.Color.White;
-            this.listBoxPosts.FormattingEnabled = true;
-            this.listBoxPosts.ItemHeight = 16;
-            this.listBoxPosts.Location = new System.Drawing.Point(3, 122);
-            this.listBoxPosts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxPosts.Name = "listBoxPosts";
-            this.listBoxPosts.Size = new System.Drawing.Size(381, 436);
-            this.listBoxPosts.TabIndex = 58;
-            this.listBoxPosts.SelectedIndexChanged += new System.EventHandler(this.listBoxPosts_SelectedIndexChanged);
+            this.listBoxThemePosts.BackColor = System.Drawing.Color.White;
+            this.listBoxThemePosts.FormattingEnabled = true;
+            this.listBoxThemePosts.ItemHeight = 16;
+            this.listBoxThemePosts.Location = new System.Drawing.Point(3, 122);
+            this.listBoxThemePosts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemePosts.Name = "listBoxThemePosts";
+            this.listBoxThemePosts.Size = new System.Drawing.Size(381, 436);
+            this.listBoxThemePosts.TabIndex = 58;
+            this.listBoxThemePosts.SelectedIndexChanged += new System.EventHandler(this.listBoxPosts_SelectedIndexChanged);
             // 
-            // textBoxSearch
+            // textBoxThemeSearch
             // 
-            this.textBoxSearch.BackColor = System.Drawing.Color.White;
-            this.textBoxSearch.Location = new System.Drawing.Point(22, 77);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(362, 22);
-            this.textBoxSearch.TabIndex = 55;
-            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
+            this.textBoxThemeSearch.BackColor = System.Drawing.Color.White;
+            this.textBoxThemeSearch.Location = new System.Drawing.Point(22, 77);
+            this.textBoxThemeSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxThemeSearch.Name = "textBoxThemeSearch";
+            this.textBoxThemeSearch.Size = new System.Drawing.Size(362, 22);
+            this.textBoxThemeSearch.TabIndex = 55;
+            this.textBoxThemeSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
-            // checkBoxSortPostsByOrder
+            // checkBoxThemeSortPostsByOrder
             // 
-            this.checkBoxSortPostsByOrder.AutoSize = true;
-            this.checkBoxSortPostsByOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.checkBoxSortPostsByOrder.Location = new System.Drawing.Point(22, 50);
-            this.checkBoxSortPostsByOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBoxSortPostsByOrder.Name = "checkBoxSortPostsByOrder";
-            this.checkBoxSortPostsByOrder.Size = new System.Drawing.Size(213, 21);
-            this.checkBoxSortPostsByOrder.TabIndex = 56;
-            this.checkBoxSortPostsByOrder.Text = "Sort Post By Name Order";
-            this.checkBoxSortPostsByOrder.UseVisualStyleBackColor = true;
-            this.checkBoxSortPostsByOrder.CheckedChanged += new System.EventHandler(this.checkBoxSortPostsByOrder_CheckedChanged);
+            this.checkBoxThemeSortPostsByOrder.AutoSize = true;
+            this.checkBoxThemeSortPostsByOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.checkBoxThemeSortPostsByOrder.Location = new System.Drawing.Point(22, 50);
+            this.checkBoxThemeSortPostsByOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxThemeSortPostsByOrder.Name = "checkBoxThemeSortPostsByOrder";
+            this.checkBoxThemeSortPostsByOrder.Size = new System.Drawing.Size(213, 21);
+            this.checkBoxThemeSortPostsByOrder.TabIndex = 56;
+            this.checkBoxThemeSortPostsByOrder.Text = "Sort Post By Name Order";
+            this.checkBoxThemeSortPostsByOrder.UseVisualStyleBackColor = true;
+            this.checkBoxThemeSortPostsByOrder.CheckedChanged += new System.EventHandler(this.checkBoxSortPostsByOrder_CheckedChanged);
             // 
-            // label7
+            // labelThemeSearchAutoComplete
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label7.Location = new System.Drawing.Point(19, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 17);
-            this.label7.TabIndex = 57;
-            this.label7.Text = "Search Auto Complete";
+            this.labelThemeSearchAutoComplete.AutoSize = true;
+            this.labelThemeSearchAutoComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelThemeSearchAutoComplete.Location = new System.Drawing.Point(19, 16);
+            this.labelThemeSearchAutoComplete.Name = "labelThemeSearchAutoComplete";
+            this.labelThemeSearchAutoComplete.Size = new System.Drawing.Size(169, 17);
+            this.labelThemeSearchAutoComplete.TabIndex = 57;
+            this.labelThemeSearchAutoComplete.Text = "Search Auto Complete";
             // 
-            // panelTheme2
+            // panelThemeComments
             // 
-            this.panelTheme2.Controls.Add(this.listBoxComments);
-            this.panelTheme2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelTheme2.Location = new System.Drawing.Point(382, 0);
-            this.panelTheme2.Name = "panelTheme2";
-            this.panelTheme2.Size = new System.Drawing.Size(748, 595);
-            this.panelTheme2.TabIndex = 1;
+            this.panelThemeComments.Controls.Add(this.listBoxThemeComments);
+            this.panelThemeComments.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelThemeComments.Location = new System.Drawing.Point(382, 0);
+            this.panelThemeComments.Name = "panelThemeComments";
+            this.panelThemeComments.Size = new System.Drawing.Size(748, 595);
+            this.panelThemeComments.TabIndex = 1;
             // 
-            // listBoxComments
+            // listBoxThemeComments
             // 
-            this.listBoxComments.BackColor = System.Drawing.Color.LightCyan;
-            this.listBoxComments.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxComments.FormattingEnabled = true;
-            this.listBoxComments.ItemHeight = 16;
-            this.listBoxComments.Location = new System.Drawing.Point(0, 0);
-            this.listBoxComments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxComments.Name = "listBoxComments";
-            this.listBoxComments.Size = new System.Drawing.Size(748, 595);
-            this.listBoxComments.TabIndex = 51;
+            this.listBoxThemeComments.BackColor = System.Drawing.Color.LightCyan;
+            this.listBoxThemeComments.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxThemeComments.FormattingEnabled = true;
+            this.listBoxThemeComments.ItemHeight = 16;
+            this.listBoxThemeComments.Location = new System.Drawing.Point(0, 0);
+            this.listBoxThemeComments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxThemeComments.Name = "listBoxThemeComments";
+            this.listBoxThemeComments.Size = new System.Drawing.Size(748, 595);
+            this.listBoxThemeComments.TabIndex = 51;
             // 
             // MainForm
             // 
@@ -1266,16 +1266,16 @@ namespace FacebookWinFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1149, 636);
-            this.Controls.Add(this.tabControlMain);
+            this.Controls.Add(this.tabControlThemeMain);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             tabFriendsAndGroups.ResumeLayout(false);
-            this.panelTheme9.ResumeLayout(false);
+            this.panelThemeGroups.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imageNormalPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).EndInit();
             this.panelTheme10.ResumeLayout(false);
-            this.panelTheme6.ResumeLayout(false);
-            this.panelTheme6.PerformLayout();
+            this.panelThemeFriends.ResumeLayout(false);
+            this.panelThemeFriends.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFriend)).EndInit();
             this.panelTheme7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.friendListBindingSource)).EndInit();
@@ -1284,27 +1284,27 @@ namespace FacebookWinFormsApp
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tabFinance.ResumeLayout(false);
-            this.tabFinance.PerformLayout();
+            this.tabPageThemeFinance.ResumeLayout(false);
+            this.tabPageThemeFinance.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStock)).EndInit();
             this.tabAlbums.ResumeLayout(false);
-            this.panelTheme5.ResumeLayout(false);
-            this.panelTheme5.PerformLayout();
+            this.panelThemePreview.ResumeLayout(false);
+            this.panelThemePreview.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
-            this.panelTheme4.ResumeLayout(false);
-            this.panelTheme4.PerformLayout();
-            this.tabPages.ResumeLayout(false);
-            this.panelTheme1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.tabProfile.ResumeLayout(false);
-            this.tabProfile.PerformLayout();
+            this.panelThemeAlbums.ResumeLayout(false);
+            this.panelThemeAlbums.PerformLayout();
+            this.tabPageThemeLikedPages.ResumeLayout(false);
+            this.panelThemeLikedPagesBrowser.ResumeLayout(false);
+            this.panelThemeLikedPages.ResumeLayout(false);
+            this.tabPageThemeProfile.ResumeLayout(false);
+            this.tabPageThemeProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeatherPredict)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
-            this.tabControlMain.ResumeLayout(false);
+            this.tabControlThemeMain.ResumeLayout(false);
             this.tabPosts.ResumeLayout(false);
-            this.panelTheme3.ResumeLayout(false);
-            this.panelTheme3.PerformLayout();
-            this.panelTheme2.ResumeLayout(false);
+            this.panelThemePosts.ResumeLayout(false);
+            this.panelThemePosts.PerformLayout();
+            this.panelThemeComments.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1323,84 +1323,84 @@ namespace FacebookWinFormsApp
         private FacebookWinFormsApp.Observer.Proxy.TextBoxTheme textBoxCustomPost;
         private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonClearText;
         private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonSaveCustomPostToList;
-        private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabFinance;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelSearchStock;
+        private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabPageThemeFinance;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeSearchStock;
         private FacebookWinFormsApp.Observer.Proxy.TextBoxTheme textBoxSearchStock;
         private System.Windows.Forms.PictureBox pictureBoxStock;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelStockIpo;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelStockChanges;
-        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonFetchStockDetails;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelStockPrice;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeStockIpo;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeStockChanges;
+        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonThemeFetchStockDetails;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeStockPrice;
         private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabAlbums;
-        private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabPages;
-        private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabProfile;
-        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonChooseCustomedPost;
+        private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabPageThemeLikedPages;
+        private FacebookWinFormsApp.Observer.Proxy.TabPageTheme tabPageThemeProfile;
+        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonThemeChooseCustomedPost;
         private System.Windows.Forms.PictureBox pictureBoxWeatherPredict;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelWeatherDetails;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeWeatherDetails;
         private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelLastUpdate;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelTemperatureInFahrnheit;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelTemperatureInCelcius;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelPredictWeather;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelCity;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelCountry;
-        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonFetchWeatherDetails;
-        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonPost;
-        private FacebookWinFormsApp.Observer.Proxy.TextBoxTheme textBoxPost;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelEmail;
-        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelGender;
-        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonLogOut;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeTemperatureInFahrnheit;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeTemperatureInCelcius;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemePredictWeather;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeCity;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeCountry;
+        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonThemeFetchWeatherDetails;
+        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonThemePost;
+        private FacebookWinFormsApp.Observer.Proxy.TextBoxTheme textBoxThemePost;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeEmail;
+        private FacebookWinFormsApp.Observer.Proxy.LabelTheme labelThemeGender;
+        private FacebookWinFormsApp.Observer.Proxy.ButtonTheme buttonThemeLogOut;
         private System.Windows.Forms.PictureBox pictureBoxProfile;
-        private FacebookWinFormsApp.Observer.Proxy.TabControlTheme tabControlMain;
+        private FacebookWinFormsApp.Observer.Proxy.TabControlTheme tabControlThemeMain;
         private System.Windows.Forms.BindingSource friendListBindingSource;
         private System.Windows.Forms.BindingSource groupBindingSource;
-        private FacebookWinFormsApp.Observer.Proxy.CheckBoxTheme checkBoxDarkMode;
-        private Observer.Proxy.PanelTheme panelTheme1;
+        private FacebookWinFormsApp.Observer.Proxy.CheckBoxTheme checkBoxThemeDarkMode;
+        private Observer.Proxy.PanelTheme panelThemeLikedPagesBrowser;
         private System.Windows.Forms.WebBrowser webBrowserPages;
-        private Observer.Proxy.PanelTheme panel3;
-        private Observer.Proxy.ButtonTheme buttonLikedPages;
-        private Observer.Proxy.ListBoxTheme listBoxLikedPages;
+        private Observer.Proxy.PanelTheme panelThemeLikedPages;
+        private Observer.Proxy.ButtonTheme buttonThemeLikedPages;
+        private Observer.Proxy.ListBoxTheme listBoxThemeLikedPages;
         private Observer.Proxy.TabPageTheme tabPosts;
-        private Observer.Proxy.PanelTheme panelTheme3;
-        private Observer.Proxy.ButtonTheme buttonFetchPosts;
-        private Observer.Proxy.ListBoxTheme listBoxPosts;
-        private Observer.Proxy.TextBoxTheme textBoxSearch;
-        private Observer.Proxy.CheckBoxTheme checkBoxSortPostsByOrder;
-        private Observer.Proxy.LabelTheme label7;
-        private Observer.Proxy.PanelTheme panelTheme2;
-        private Observer.Proxy.ListBoxTheme listBoxComments;
-        private Observer.Proxy.PanelTheme panelTheme5;
-        private Observer.Proxy.ButtonTheme buttonLike;
+        private Observer.Proxy.PanelTheme panelThemePosts;
+        private Observer.Proxy.ButtonTheme buttonThemeFetchPosts;
+        private Observer.Proxy.ListBoxTheme listBoxThemePosts;
+        private Observer.Proxy.TextBoxTheme textBoxThemeSearch;
+        private Observer.Proxy.CheckBoxTheme checkBoxThemeSortPostsByOrder;
+        private Observer.Proxy.LabelTheme labelThemeSearchAutoComplete;
+        private Observer.Proxy.ListBoxTheme listBoxThemeComments;
+        private Observer.Proxy.PanelTheme panelThemePreview;
+        private Observer.Proxy.ButtonTheme buttonThemeLike;
         private Observer.Proxy.LabelTheme label5;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
-        private Observer.Proxy.LabelTheme label4;
-        private Observer.Proxy.ListBoxTheme listBoxPhotosComments;
-        private Observer.Proxy.PanelTheme panelTheme4;
-        private Observer.Proxy.ListBoxTheme listBoxAlbums;
+        private Observer.Proxy.LabelTheme labelThemePreview;
+        private Observer.Proxy.ListBoxTheme listBoxThemePhotosComments;
+        private Observer.Proxy.PanelTheme panelThemeAlbums;
+        private Observer.Proxy.ListBoxTheme listBoxThemeAlbums;
         private Observer.Proxy.ButtonTheme buttonFetchAlbums;
-        private Observer.Proxy.ListBoxTheme listBoxPhotos;
-        private Observer.Proxy.LabelTheme label1;
-        private Observer.Proxy.LabelTheme label2;
-        private Observer.Proxy.PanelTheme panelTheme9;
+        private Observer.Proxy.ListBoxTheme listBoxThemePhotos;
+        private Observer.Proxy.LabelTheme labelThemeAlbums;
+        private Observer.Proxy.LabelTheme labelThemePhotos;
+        private Observer.Proxy.PanelTheme panelThemeGroups;
         private System.Windows.Forms.PictureBox imageNormalPictureBox;
-        private Observer.Proxy.ButtonTheme buttonFetchGroups;
+        private Observer.Proxy.ButtonTheme buttonThemeFetchGroups;
         private Observer.Proxy.PanelTheme panelTheme10;
-        private Observer.Proxy.ListBoxTheme listBoxGroups;
-        private Observer.Proxy.PanelTheme panelTheme6;
+        private Observer.Proxy.ListBoxTheme listBoxThemeGroups;
+        private Observer.Proxy.PanelTheme panelThemeFriends;
         private Proxy.MonthCalendarProxy monthCalendarBirthday;
         private System.Windows.Forms.RadioButton radioButtonCloseFriend;
         private System.Windows.Forms.RadioButton radioButtonFarFriend;
-        private Observer.Proxy.ButtonTheme buttonMakeBirthday;
+        private Observer.Proxy.ButtonTheme buttonThemeMakeBirthday;
         private Observer.Proxy.LabelTheme labelFriendEmail;
-        private Observer.Proxy.ButtonTheme buttonFetchFriends;
+        private Observer.Proxy.ButtonTheme buttonThemeFetchFriends;
         private System.Windows.Forms.PictureBox pictureBoxFriend;
         private Observer.Proxy.LabelTheme labelFriendLastName;
         private Observer.Proxy.LabelTheme labelFriendGender;
         private Observer.Proxy.LabelTheme labelFriendFirstName;
         private Observer.Proxy.LabelTheme labelFriendBirthday;
         private Observer.Proxy.PanelTheme panelTheme7;
-        private Observer.Proxy.ListBoxTheme listBoxFriends;
-        private Observer.Proxy.LabelTheme labelBirthday;
-        private Observer.Proxy.LabelTheme labelFirstName;
-        private Observer.Proxy.LabelTheme labelLastName;
+        private Observer.Proxy.ListBoxTheme listBoxThemeFriends;
+        private Observer.Proxy.LabelTheme labelThemeBirthday;
+        private Observer.Proxy.LabelTheme labelThemeFirstName;
+        private Observer.Proxy.LabelTheme labelThemeLastName;
+        private Observer.Proxy.PanelTheme panelThemeComments;
     }
 }

@@ -32,7 +32,7 @@ namespace FacebookWinFormsApp
             CommandInvoker = new CommandInvoker();
             LoginFacade = new LoginFacade();
             LoginFacade.LoginUser = m_LoginUser;
-            ColorSchemeNotifyerDelegate += enableOrDisableColorScheme;
+            AddListener(enableOrDisableColorScheme);
             InitializeComponent();
         }
 
@@ -65,42 +65,42 @@ namespace FacebookWinFormsApp
         private void fetchWeatherDetails(string i_CityLocation)
         {
             WeatherDetails weatherDetails = WeatherFeature.WeatherFeature.GetWeatherDetails(i_CityLocation);
-            labelCountry.Text = $"Country: {weatherDetails.Location.Country}";
-            labelCountry.Visible = true;
+            labelThemeCountry.Text = $"Country: {weatherDetails.Location.Country}";
+            labelThemeCountry.Visible = true;
             labelLastUpdate.Text = $"Last Update: {weatherDetails.Location.LocalTime}";
             labelLastUpdate.Visible = true;
-            labelCity.Text = $"City: {weatherDetails.Location.City}";
-            labelCity.Visible = true;
-            labelPredictWeather.Text = $"Predict: {weatherDetails.DailyPredict.Condition.PredictText}";
-            labelPredictWeather.Visible = true;
-            labelTemperatureInCelcius.Text = $"Temperture in Celcius: {weatherDetails.DailyPredict.TempertureInCelsius}";
-            labelTemperatureInCelcius.Visible = true;
-            labelTemperatureInFahrnheit.Text = $"Temperture in Fahrenheit: {weatherDetails.DailyPredict.TempertureInFahrenheit}";
-            labelTemperatureInFahrnheit.Visible = true;
+            labelThemeCity.Text = $"City: {weatherDetails.Location.City}";
+            labelThemeCity.Visible = true;
+            labelThemePredictWeather.Text = $"Predict: {weatherDetails.DailyPredict.Condition.PredictText}";
+            labelThemePredictWeather.Visible = true;
+            labelThemeTemperatureInCelcius.Text = $"Temperture in Celcius: {weatherDetails.DailyPredict.TempertureInCelsius}";
+            labelThemeTemperatureInCelcius.Visible = true;
+            labelThemeTemperatureInFahrnheit.Text = $"Temperture in Fahrenheit: {weatherDetails.DailyPredict.TempertureInFahrenheit}";
+            labelThemeTemperatureInFahrnheit.Visible = true;
             pictureBoxWeatherPredict.ImageLocation = "Http:" + weatherDetails.DailyPredict.Condition.PredictIcon;
             pictureBoxWeatherPredict.Visible = true;
-            buttonFetchWeatherDetails.Visible = true;
-            labelWeatherDetails.Visible = true;
+            buttonThemeFetchWeatherDetails.Visible = true;
+            labelThemeWeatherDetails.Visible = true;
         }
 
         private void fetchSelfDetails()
         {
-            labelFirstName.Invoke(new Action(() => labelFirstName.Text += LoginFacade.LoginUser.FirstName));
-            labelLastName.Invoke(new Action(() => labelLastName.Text += LoginFacade.LoginUser.LastName));
-            labelEmail.Invoke(new Action(() => labelEmail.Text += LoginFacade.LoginUser.Email));
-            labelGender.Invoke(new Action(() => labelGender.Text += LoginFacade.LoginUser.Gender.ToString()));
-            labelBirthday.Invoke(new Action(() => labelBirthday.Text += LoginFacade.LoginUser.Birthday));
+            labelThemeFirstName.Invoke(new Action(() => labelThemeFirstName.Text += LoginFacade.LoginUser.FirstName));
+            labelThemeLastName.Invoke(new Action(() => labelThemeLastName.Text += LoginFacade.LoginUser.LastName));
+            labelThemeEmail.Invoke(new Action(() => labelThemeEmail.Text += LoginFacade.LoginUser.Email));
+            labelThemeGender.Invoke(new Action(() => labelThemeGender.Text += LoginFacade.LoginUser.Gender.ToString()));
+            labelThemeBirthday.Invoke(new Action(() => labelThemeBirthday.Text += LoginFacade.LoginUser.Birthday));
         }
 
         private void fetchLikedPages()
         {
-            listBoxLikedPages.Invoke(new Action(() => listBoxLikedPages.Items.Clear()));
+            listBoxThemeLikedPages.Invoke(new Action(() => listBoxThemeLikedPages.Items.Clear()));
 
             try
             {
                 foreach (Page page in LoginFacade.LoginUser.LikedPages)
                 {
-                    listBoxLikedPages.Invoke(new Action(() => listBoxLikedPages.Items.Add(page.Name)));
+                    listBoxThemeLikedPages.Invoke(new Action(() => listBoxThemeLikedPages.Items.Add(page.Name)));
                 }
             }
             catch (Exception exception)
@@ -108,9 +108,9 @@ namespace FacebookWinFormsApp
                 MessageBox.Show(exception.Message);
             }
 
-            if (listBoxLikedPages.Items.Count == 0)
+            if (listBoxThemeLikedPages.Items.Count == 0)
             {
-                listBoxLikedPages.Invoke(new Action(() => listBoxLikedPages.Items.Add("There are no liked pages for this user")));
+                listBoxThemeLikedPages.Invoke(new Action(() => listBoxThemeLikedPages.Items.Add("There are no liked pages for this user")));
             }
         }
 
@@ -136,15 +136,15 @@ namespace FacebookWinFormsApp
         private void fetchPosts()
         {
             LoginFacade.LoginUser.ReFetch();
-            listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Clear()));
-            listBoxPosts.Invoke(new Action(() => listBoxPosts.DisplayMember = "Message"));
+            listBoxThemePosts.Invoke(new Action(() => listBoxThemePosts.Items.Clear()));
+            listBoxThemePosts.Invoke(new Action(() => listBoxThemePosts.DisplayMember = "Message"));
             try
             {
                 foreach (Post post in LoginFacade.LoginUser.Posts)
                 {
                     if (post.Message != null)
                     {
-                        listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(post)));
+                        listBoxThemePosts.Invoke(new Action(() => listBoxThemePosts.Items.Add(post)));
                     }
                 }
             }
@@ -161,18 +161,18 @@ namespace FacebookWinFormsApp
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            searchInPost(listBoxPosts.Text);
+            searchInPost(listBoxThemePosts.Text);
         }
 
         private void searchInPost(string i_StringToSearch)
         {
-            if (listBoxPosts.Items.Count != 0)
+            if (listBoxThemePosts.Items.Count != 0)
             {
-                int id = listBoxPosts.FindString(i_StringToSearch);
+                int id = listBoxThemePosts.FindString(i_StringToSearch);
 
                 if (id >= 0)
                 {
-                    listBoxPosts.SetSelected(id, true);
+                    listBoxThemePosts.SetSelected(id, true);
                 }
             }
             else
@@ -183,9 +183,9 @@ namespace FacebookWinFormsApp
 
         private void listBoxPosts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Post selected = LoginFacade.LoginUser.Posts[listBoxPosts.SelectedIndex];
-            listBoxComments.DisplayMember = "Message";
-            listBoxComments.DataSource = selected.Comments;
+            Post selected = LoginFacade.LoginUser.Posts[listBoxThemePosts.SelectedIndex];
+            listBoxThemeComments.DisplayMember = "Message";
+            listBoxThemeComments.DataSource = selected.Comments;
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
@@ -195,12 +195,12 @@ namespace FacebookWinFormsApp
 
         private void checkBoxSortPostsByOrder_CheckedChanged(object sender, EventArgs e)
         {
-            if (listBoxPosts.Items.Count != 0 && (sender as CheckBox)?.Checked == true)
+            if (listBoxThemePosts.Items.Count != 0 && (sender as CheckBox)?.Checked == true)
             {
                 try
                 {
                     r_LastPostsCollection.Clear();
-                    foreach (Post post in listBoxPosts.Items)
+                    foreach (Post post in listBoxThemePosts.Items)
                     {
                         r_LastPostsCollection.Add(post);
                     }
@@ -210,26 +210,26 @@ namespace FacebookWinFormsApp
                     MessageBox.Show(exception.Message);
                 }
 
-                listBoxPosts.Sorted = true;
+                listBoxThemePosts.Sorted = true;
             }
-            else if (listBoxPosts.Items.Count == 0)
+            else if (listBoxThemePosts.Items.Count == 0)
             {
                 System.Windows.MessageBox.Show("no posts");
             }
             else
             {
-                listBoxPosts.Sorted = false;
-                listBoxPosts.Items.Clear();
+                listBoxThemePosts.Sorted = false;
+                listBoxThemePosts.Items.Clear();
                 foreach (object obj in r_LastPostsCollection)
                 {
-                    listBoxPosts.Items.Add(obj);
+                    listBoxThemePosts.Items.Add(obj);
                 }
             }
         }
 
         private void listBoxLikedPages_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Page selected = LoginFacade.LoginUser.LikedPages[listBoxLikedPages.SelectedIndex];
+            Page selected = LoginFacade.LoginUser.LikedPages[listBoxThemeLikedPages.SelectedIndex];
             new Thread(() => webBrowserPages.Navigate(selected.URL)).Start();
         }
 
@@ -240,14 +240,14 @@ namespace FacebookWinFormsApp
 
         private void listBoxPhotosSelectedPhoto()
         {
-            if (listBoxPhotos.SelectedItem != null)
+            if (listBoxThemePhotos.SelectedItem != null)
             {
-                Photo selectedPhoto = listBoxPhotos.SelectedItem as Photo;
+                Photo selectedPhoto = listBoxThemePhotos.SelectedItem as Photo;
                 if (selectedPhoto != null)
                 {
                     pictureBoxPhoto.ImageLocation = selectedPhoto.PictureNormalURL;
                     pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
-                    listBoxPhotosComments.Invoke(new Action(() => listBoxPhotosComments.DataSource = selectedPhoto.Comments));
+                    listBoxThemePhotosComments.Invoke(new Action(() => listBoxThemePhotosComments.DataSource = selectedPhoto.Comments));
                 }
             }
         }
@@ -259,14 +259,14 @@ namespace FacebookWinFormsApp
 
         private void fetchAlbums()
         {
-            listBoxAlbums.Invoke(new Action(() => listBoxAlbums.Items.Clear()));
-            listBoxAlbums.Invoke(new Action(() => listBoxAlbums.DisplayMember = "Name"));
+            listBoxThemeAlbums.Invoke(new Action(() => listBoxThemeAlbums.Items.Clear()));
+            listBoxThemeAlbums.Invoke(new Action(() => listBoxThemeAlbums.DisplayMember = "Name"));
 
             try
             {
                 foreach (Album album in LoginFacade.LoginUser.Albums)
                 {
-                    listBoxAlbums.Invoke(new Action(() => listBoxAlbums.Items.Add(album)));
+                    listBoxThemeAlbums.Invoke(new Action(() => listBoxThemeAlbums.Items.Add(album)));
                 }
             }
             catch (Exception exception)
@@ -274,7 +274,7 @@ namespace FacebookWinFormsApp
                 MessageBox.Show(exception.Message);
             }
 
-            if (listBoxAlbums.Items.Count == 0)
+            if (listBoxThemeAlbums.Items.Count == 0)
             {
                 System.Windows.MessageBox.Show("No Albums to retrieve :(");
             }
@@ -282,15 +282,15 @@ namespace FacebookWinFormsApp
 
         private void listBoxAlbums_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBoxPhotos.Items.Clear();
-            listBoxPhotos.DisplayMember = "CreatedTime.ToString()";
-            Album albumSelected = listBoxAlbums.SelectedItem as Album;
+            listBoxThemePhotos.Items.Clear();
+            listBoxThemePhotos.DisplayMember = "CreatedTime.ToString()";
+            Album albumSelected = listBoxThemeAlbums.SelectedItem as Album;
 
             try
             {
                 foreach (Photo photo in albumSelected.Photos)
                 {
-                    listBoxPhotos.Items.Add(photo);
+                    listBoxThemePhotos.Items.Add(photo);
                 }
             }
             catch (Exception exception)
@@ -298,7 +298,7 @@ namespace FacebookWinFormsApp
                 MessageBox.Show(exception.Message);
             }
 
-            if (listBoxPhotos.Items.Count == 0)
+            if (listBoxThemePhotos.Items.Count == 0)
             {
                 MessageBox.Show("No photos to fetch");
             }
@@ -308,9 +308,9 @@ namespace FacebookWinFormsApp
         {
             try
             {
-                if (listBoxPhotos.SelectedItem != null)
+                if (listBoxThemePhotos.SelectedItem != null)
                 {
-                    Photo photo = listBoxPhotos.SelectedItem as Photo;
+                    Photo photo = listBoxThemePhotos.SelectedItem as Photo;
                     if (!photo.LikedBy.Contains(LoginFacade.LoginUser))
                     {
                         photo.Like();
@@ -336,7 +336,7 @@ namespace FacebookWinFormsApp
         {
             try
             {
-                LoginFacade.LoginUser.PostStatus(textBoxPost.Text);
+                LoginFacade.LoginUser.PostStatus(textBoxThemePost.Text);
                 System.Windows.MessageBox.Show("Your post shared sucessfully");
             }
             catch (Exception)
@@ -345,13 +345,13 @@ namespace FacebookWinFormsApp
             }
             finally
             {
-                textBoxPost.Text = string.Empty;
+                textBoxThemePost.Text = string.Empty;
             }
         }
 
         private void listBoxFriends_SelectedIndexChanged(object sender, EventArgs e)
         {
-            User friend = listBoxFriends.SelectedItem as User;
+            User friend = listBoxThemeFriends.SelectedItem as User;
             new Thread(() => fetchFriendsDetails(friend)).Start();
         }
 
@@ -387,9 +387,9 @@ namespace FacebookWinFormsApp
             try
             {
                 Stock searchStock = FinanceFeature.FinanceFeature.GetStocksDetails(textBoxSearchStock.Text);
-                labelStockPrice.Text = $"Price: {searchStock.Price.ToString()}";
-                labelStockIpo.Text = $"Stock Ipo: {searchStock.IpoDate}";
-                labelStockChanges.Text = $"Changes: {searchStock.Changes.ToString()}";
+                labelThemeStockPrice.Text = $"Price: {searchStock.Price.ToString()}";
+                labelThemeStockIpo.Text = $"Stock Ipo: {searchStock.IpoDate}";
+                labelThemeStockChanges.Text = $"Changes: {searchStock.Changes.ToString()}";
                 pictureBoxStock.ImageLocation = searchStock.Image;
             }
             catch
@@ -501,7 +501,7 @@ namespace FacebookWinFormsApp
                     MessageBox.Show(exception.Message);
                 }
 
-                if (listBoxFriends.Items.Count == 0)
+                if (listBoxThemeFriends.Items.Count == 0)
                 {
                     MessageBox.Show("no Friends to fetch");
                 }
@@ -522,8 +522,8 @@ namespace FacebookWinFormsApp
                 }
                 else if (result == MessageBoxResult.Cancel)
                 {
-                    this.tabControlMain.SelectedTab = tabProfile;
-                    this.textBoxPost.Text = post;
+                    this.tabControlThemeMain.SelectedTab = tabPageThemeProfile;
+                    this.textBoxThemePost.Text = post;
                     listBoxCustomPosts.ClearSelected();
                 }
             }
@@ -531,7 +531,7 @@ namespace FacebookWinFormsApp
 
         private void buttonChooseCustomedPost_Click(object sender, EventArgs e)
         {
-            tabControlMain.SelectedTab = tabCustomPost;
+            tabControlThemeMain.SelectedTab = tabCustomPost;
         }
 
         private void buttonFetchGroups_Click(object sender, EventArgs e)
@@ -546,7 +546,7 @@ namespace FacebookWinFormsApp
 
         private void makeBirthday()
         {
-            if (listBoxFriends.SelectedItem != null && (radioButtonCloseFriend.Checked || radioButtonFarFriend.Checked))
+            if (listBoxThemeFriends.SelectedItem != null && (radioButtonCloseFriend.Checked || radioButtonFarFriend.Checked))
             {
                 try
                 {
@@ -560,7 +560,7 @@ namespace FacebookWinFormsApp
                         eBuilderType = eBuilderType.FarFriend;
                     }
 
-                    BirthdayManager birthdayManager = new BirthdayManager(eBuilderType, LoginFacade.LoginUser, listBoxFriends.SelectedItem);
+                    BirthdayManager birthdayManager = new BirthdayManager(eBuilderType, LoginFacade.LoginUser, listBoxThemeFriends.SelectedItem);
                     birthdayManager.ConstructHappyBirthdayActivity();
                 }
                 catch (Exception ex)
@@ -568,7 +568,7 @@ namespace FacebookWinFormsApp
                     MessageBox.Show(ex.Message);
                 }
             }
-            else if (listBoxFriends.SelectedItem == null)
+            else if (listBoxThemeFriends.SelectedItem == null)
             {
                 MessageBox.Show("please choose friend");
             }
@@ -606,7 +606,7 @@ namespace FacebookWinFormsApp
 
         private void notifyAllListeners()
         {
-            if (checkBoxDarkMode.Checked)
+            if (checkBoxThemeDarkMode.Checked)
             {
                 ColorSchemeNotifyerDelegate?.Invoke(true);
             }
@@ -615,11 +615,11 @@ namespace FacebookWinFormsApp
                 ColorSchemeNotifyerDelegate?.Invoke(false);
             }
         }
-        public void AddListeners(ColorSchemeNotifyerDelegate i_ColorSchemeNotifyerDelegate)
+        public void AddListener(ColorSchemeNotifyerDelegate i_ColorSchemeNotifyerDelegate)
         {
             ColorSchemeNotifyerDelegate += i_ColorSchemeNotifyerDelegate;
         }
-        public void RemoveListeners(ColorSchemeNotifyerDelegate i_ColorSchemeNotifyerDelegate)
+        public void RemoveListener(ColorSchemeNotifyerDelegate i_ColorSchemeNotifyerDelegate)
         {
             ColorSchemeNotifyerDelegate -= i_ColorSchemeNotifyerDelegate;
         }

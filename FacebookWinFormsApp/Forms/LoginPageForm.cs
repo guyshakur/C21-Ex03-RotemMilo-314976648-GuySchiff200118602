@@ -24,7 +24,7 @@ namespace FacebookWinFormsApp
             if(LoginFacade.Login(rememberMeChecked.Checked))
             {
                 MainForm mainForm = new MainForm(LoginFacade.LoginUser);
-                mainForm.AddListeners(enableOrDisableColorScheme);
+                mainForm.AddListener(enableOrDisableColorScheme);
                 Hide();
                 //Close();
                 mainForm.ShowDialog();

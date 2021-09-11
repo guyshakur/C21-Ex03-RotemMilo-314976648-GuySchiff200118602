@@ -10,7 +10,7 @@ namespace FacebookWinFormsApp.Observer.Proxy
 {
     public delegate void ColorSchemeChangeModeDelegeate(bool i_Dark);
 
-    public class FormTheme : Form, IThemable
+    public  class FormTheme : Form, IThemable
     {
         private readonly ThemeComponentMaker r_ThemeComponentMaker;
         private const int k_ChildrenBrigthness = 20;
